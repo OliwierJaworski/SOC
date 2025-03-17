@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/466c/hdl/USS_V1_slave_lite_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/466c/hdl/USS_V1.vhd" \
+"../../../bd/design_1/ipshared/466c/b848/USS_v2.vhd" \
+"../../../bd/design_1/ip/design_1_USS_V1_0_1/sim/design_1_USS_V1_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+# Do not sort compile order
+nosort

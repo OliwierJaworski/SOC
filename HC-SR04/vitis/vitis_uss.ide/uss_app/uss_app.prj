@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="uss_app" location="C:/Users/oliwi/Desktop/Project_Folder/Audio_Processing/Opdrachten/USS_project/USS_Project/uss_app" platform="C:/Users/oliwi/Desktop/Project_Folder/Audio_Processing/Opdrachten/USS_project/USS_Project/USS_v2/export/USS_v2/USS_v2.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="uss_app_system" sysConfig="USS_v2" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="a589233d19be529f0376c61c74356a9e">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.964701325">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1847704185" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
