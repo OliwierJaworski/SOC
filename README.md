@@ -9,7 +9,7 @@ This subfolder contains resources related to the **HC-SR04 Ultrasonic** sensor, 
 - [PDF Block Design](./HC-SR04/design_1.pdf)
 - [Vitis Classic Project](./HC-SR04/vitis/)
 - [Vivado Project](./HC-SR04/vivado/)
-- [YouTube Demo](https://your-youtube-link.com)
+- [YouTube Demo](https://youtu.be/epBwFla-cHY)
 
 ---
 
