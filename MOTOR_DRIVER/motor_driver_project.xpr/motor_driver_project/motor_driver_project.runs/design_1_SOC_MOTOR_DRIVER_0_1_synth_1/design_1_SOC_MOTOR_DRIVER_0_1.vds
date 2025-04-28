@@ -1,0 +1,368 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Mar 19 22:06:49 2025
+# Process ID: 12704
+# Current directory: C:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.runs/design_1_SOC_MOTOR_DRIVER_0_1_synth_1
+# Command line: vivado.exe -log design_1_SOC_MOTOR_DRIVER_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_SOC_MOTOR_DRIVER_0_1.tcl
+# Log file: C:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.runs/design_1_SOC_MOTOR_DRIVER_0_1_synth_1/design_1_SOC_MOTOR_DRIVER_0_1.vds
+# Journal file: C:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.runs/design_1_SOC_MOTOR_DRIVER_0_1_synth_1\vivado.jou
+# Running On        :Laptop-Oli
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics         
+# CPU Frequency     :2096 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :7879 MB
+# Swap memory       :5247 MB
+# Total Virtual     :13127 MB
+# Available Virtual :1211 MB
+#-----------------------------------------------------------
+source design_1_SOC_MOTOR_DRIVER_0_1.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 485.270 ; gain = 201.465
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/oliwi/Documents/SOC/ip_repo/SOC_MOTOR_DRIVER_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_SOC_MOTOR_DRIVER_0_1
+Command: synth_design -top design_1_SOC_MOTOR_DRIVER_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Device 21-9227] Part: xc7z020clg400-1 does not have CEAM library.
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12812
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1377.816 ; gain = 446.336
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_SOC_MOTOR_DRIVER_0_1' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ip/design_1_SOC_MOTOR_DRIVER_0_1/synth/design_1_SOC_MOTOR_DRIVER_0_1.vhd:84]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'SOC_MOTOR_DRIVER' declared at 'c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER.vhd:5' bound to instance 'U0' of component 'SOC_MOTOR_DRIVER' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ip/design_1_SOC_MOTOR_DRIVER_0_1/synth/design_1_SOC_MOTOR_DRIVER_0_1.vhd:154]
+INFO: [Synth 8-638] synthesizing module 'SOC_MOTOR_DRIVER' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER.vhd:50]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI' declared at 'c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst' of component 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-226] default block is never used [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI.vhd:237]
+INFO: [Synth 8-3491] module 'MOTOR_DRIVER' declared at 'c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/3219/MOTOR_DRIVER_code.vhd:5' bound to instance 'MOTOR_DRIVER_INST' of component 'MOTOR_DRIVER' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI.vhd:335]
+INFO: [Synth 8-638] synthesizing module 'MOTOR_DRIVER' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/3219/MOTOR_DRIVER_code.vhd:18]
+INFO: [Synth 8-226] default block is never used [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/3219/MOTOR_DRIVER_code.vhd:49]
+WARNING: [Synth 8-614] signal 'motor_state' is read in the process but is not in the sensitivity list [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/3219/MOTOR_DRIVER_code.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'MOTOR_DRIVER' (0#1) [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/3219/MOTOR_DRIVER_code.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'SOC_MOTOR_DRIVER' (0#1) [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/hdl/SOC_MOTOR_DRIVER.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'design_1_SOC_MOTOR_DRIVER_0_1' (0#1) [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ip/design_1_SOC_MOTOR_DRIVER_0_1/synth/design_1_SOC_MOTOR_DRIVER_0_1.vhd:84]
+WARNING: [Synth 8-7129] Port frequency[31] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[30] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[29] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[28] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[27] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[26] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[25] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[24] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[23] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[22] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[21] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[20] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[19] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[18] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[17] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[16] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[15] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[14] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[13] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[12] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[11] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[10] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[9] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[8] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[7] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[6] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[5] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[4] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[3] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[2] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[1] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port frequency[0] in module MOTOR_DRIVER is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[2] in module SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[1] in module SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_AWPROT[0] in module SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[2] in module SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[1] in module SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_ARPROT[0] in module SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1495.555 ; gain = 564.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1495.555 ; gain = 564.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1495.555 ; gain = 564.074
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1495.555 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1591.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1591.527 ; gain = 0.230
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_write_reg' in module 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI'
+INFO: [Synth 8-802] inferred FSM for state register 'state_read_reg' in module 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI'
+WARNING: [Synth 8-327] inferring latch for variable 'motor_state_reg[0]' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/3219/MOTOR_DRIVER_code.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'motor_state_reg[1]' [c:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.gen/sources_1/bd/design_1/ipshared/88f1/3219/MOTOR_DRIVER_code.vhd:51]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                   waddr |                              010 |                               10
+                   wdata |                              100 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_write_reg' using encoding 'one-hot' in module 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                   raddr |                               01 |                               10
+                   rdata |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_read_reg' using encoding 'sequential' in module 'SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Multipliers : 
+	               8x32  Multipliers := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 4     
+	   4 Input   32 Bit        Muxes := 5     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   8 Input    2 Bit        Muxes := 2     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 12    
+	   4 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1, operation Mode is: (A:0x1e100)*B2.
+DSP Report: register U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1 is absorbed into DSP U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1.
+DSP Report: operator U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1 is absorbed into DSP U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1.
+DSP Report: operator U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1 is absorbed into DSP U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1.
+DSP Report: Generating DSP U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1 is absorbed into DSP U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1.
+DSP Report: operator U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1 is absorbed into DSP U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1.
+DSP Report: operator U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1 is absorbed into DSP U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1.
+WARNING: [Synth 8-7129] Port s00_axi_awprot[2] in module design_1_SOC_MOTOR_DRIVER_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[1] in module design_1_SOC_MOTOR_DRIVER_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_awprot[0] in module design_1_SOC_MOTOR_DRIVER_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[2] in module design_1_SOC_MOTOR_DRIVER_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[1] in module design_1_SOC_MOTOR_DRIVER_0_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axi_arprot[0] in module design_1_SOC_MOTOR_DRIVER_0_1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+ Sort Area is  U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1_0 : 0 0 : 854 2439 : Used 1 time 0
+ Sort Area is  U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/MOTOR_DRIVER_INST/pwm_threshold1_0 : 0 1 : 1585 2439 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                   | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_1_SOC_MOTOR_DRIVER_0_1 | (A:0x1e100)*B2  | 18     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_SOC_MOTOR_DRIVER_0_1 | (PCIN>>17)+A*B2 | 16     | 9      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                   | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|design_1_SOC_MOTOR_DRIVER_0_1 | A*B'          | 17     | 8      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|design_1_SOC_MOTOR_DRIVER_0_1 | PCIN>>17+A*B' | 10     | 8      | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
++------------------------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    63|
+|2     |DSP48E1 |     2|
+|3     |LUT1    |    14|
+|4     |LUT2    |    98|
+|5     |LUT3    |    48|
+|6     |LUT4    |    42|
+|7     |LUT5    |    42|
+|8     |LUT6    |   143|
+|9     |FDRE    |   177|
+|10    |FDSE    |     1|
+|11    |LD      |     4|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1591.527 ; gain = 660.047
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:41 . Memory (MB): peak = 1591.527 ; gain = 564.074
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:44 . Memory (MB): peak = 1591.527 ; gain = 660.047
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1591.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 69 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1591.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 4 instances
+
+Synth Design complete | Checksum: 74997182
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:49 ; elapsed = 00:01:00 . Memory (MB): peak = 1591.527 ; gain = 1090.203
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1591.527 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.runs/design_1_SOC_MOTOR_DRIVER_0_1_synth_1/design_1_SOC_MOTOR_DRIVER_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_SOC_MOTOR_DRIVER_0_1, cache-ID = 1031ce1a34521f37
+INFO: [Coretcl 2-1174] Renamed 3 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1591.527 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.runs/design_1_SOC_MOTOR_DRIVER_0_1_synth_1/design_1_SOC_MOTOR_DRIVER_0_1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_SOC_MOTOR_DRIVER_0_1_utilization_synth.rpt -pb design_1_SOC_MOTOR_DRIVER_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Mar 19 22:08:11 2025...

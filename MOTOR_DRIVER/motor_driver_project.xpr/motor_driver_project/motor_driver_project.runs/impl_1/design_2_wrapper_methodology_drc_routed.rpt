@@ -1,0 +1,221 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar 27 13:29:43 2025
+| Host         : Laptop-Oli running 64-bit major release  (build 9200)
+| Command      : report_methodology -file design_2_wrapper_methodology_drc_routed.rpt -pb design_2_wrapper_methodology_drc_routed.pb -rpx design_2_wrapper_methodology_drc_routed.rpx
+| Design       : design_2_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_design_2_wrapper
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 37
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-16 | Warning  | Large setup violation         | 33         |
+| TIMING-18 | Warning  | Missing input or output delay | 4          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-16#1 Warning
+Large setup violation  
+There is a large setup violation of -88.259 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/NS_pwm_reg/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#2 Warning
+Large setup violation  
+There is a large setup violation of -88.554 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[0]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#3 Warning
+Large setup violation  
+There is a large setup violation of -88.729 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[1]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#4 Warning
+Large setup violation  
+There is a large setup violation of -88.846 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[2]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#5 Warning
+Large setup violation  
+There is a large setup violation of -88.910 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[3]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#6 Warning
+Large setup violation  
+There is a large setup violation of -89.035 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[4]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#7 Warning
+Large setup violation  
+There is a large setup violation of -89.055 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[6]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#8 Warning
+Large setup violation  
+There is a large setup violation of -89.131 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[7]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#9 Warning
+Large setup violation  
+There is a large setup violation of -89.139 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[5]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#10 Warning
+Large setup violation  
+There is a large setup violation of -89.154 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[8]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#11 Warning
+Large setup violation  
+There is a large setup violation of -89.174 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[10]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#12 Warning
+Large setup violation  
+There is a large setup violation of -89.250 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[11]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#13 Warning
+Large setup violation  
+There is a large setup violation of -89.258 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[9]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#14 Warning
+Large setup violation  
+There is a large setup violation of -89.272 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[12]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#15 Warning
+Large setup violation  
+There is a large setup violation of -89.292 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[14]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#16 Warning
+Large setup violation  
+There is a large setup violation of -89.368 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[15]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#17 Warning
+Large setup violation  
+There is a large setup violation of -89.376 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[13]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#18 Warning
+Large setup violation  
+There is a large setup violation of -89.389 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[16]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#19 Warning
+Large setup violation  
+There is a large setup violation of -89.409 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[18]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#20 Warning
+Large setup violation  
+There is a large setup violation of -89.485 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[19]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#21 Warning
+Large setup violation  
+There is a large setup violation of -89.493 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[17]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#22 Warning
+Large setup violation  
+There is a large setup violation of -89.507 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[20]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#23 Warning
+Large setup violation  
+There is a large setup violation of -89.527 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[22]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#24 Warning
+Large setup violation  
+There is a large setup violation of -89.603 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[23]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#25 Warning
+Large setup violation  
+There is a large setup violation of -89.611 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[21]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#26 Warning
+Large setup violation  
+There is a large setup violation of -89.626 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[24]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#27 Warning
+Large setup violation  
+There is a large setup violation of -89.646 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[26]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#28 Warning
+Large setup violation  
+There is a large setup violation of -89.722 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[27]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#29 Warning
+Large setup violation  
+There is a large setup violation of -89.730 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[25]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#30 Warning
+Large setup violation  
+There is a large setup violation of -89.744 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[28]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#31 Warning
+Large setup violation  
+There is a large setup violation of -89.764 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[30]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#32 Warning
+Large setup violation  
+There is a large setup violation of -89.840 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[31]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-16#33 Warning
+Large setup violation  
+There is a large setup violation of -89.848 ns between design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/slv_reg1_reg[0]_replica_6/C (clocked by clk_fpga_0) and design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/counter_reg[29]/D (clocked by clk_fpga_0). Large setup violations at the end of those stages might be difficult to fix during the post-placement implementation flow and could be the result of non-optimal XDC constraints or non-optimal design architecture
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An output delay is missing on motor_out_0[0] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An output delay is missing on motor_out_0[1] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on motor_out_0[2] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on motor_out_0[3] relative to the rising and/or falling clock edge(s) of clk_fpga_0.
+Related violations: <none>
+
+

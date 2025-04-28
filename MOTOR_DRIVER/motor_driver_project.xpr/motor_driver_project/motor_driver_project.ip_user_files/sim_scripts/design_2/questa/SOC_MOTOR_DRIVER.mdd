@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER SOC_MOTOR_DRIVER
+	OPTION supported_peripherals = (SOC_MOTOR_DRIVER);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = SOC_MOTOR_DRIVER;
+END DRIVER

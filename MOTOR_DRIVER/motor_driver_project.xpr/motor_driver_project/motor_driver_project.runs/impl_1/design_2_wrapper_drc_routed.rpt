@@ -1,0 +1,53 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Thu Mar 27 13:29:40 2025
+| Host         : Laptop-Oli running 64-bit major release  (build 9200)
+| Command      : report_drc -file design_2_wrapper_drc_routed.rpt -pb design_2_wrapper_drc_routed.pb -rpx design_2_wrapper_drc_routed.rpx
+| Design       : design_2_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_design_2_wrapper
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 3
++--------+----------+------------------------+------------+
+| Rule   | Severity | Description            | Violations |
++--------+----------+------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining       | 1          |
+| DPOP-1 | Warning  | PREG Output pipelining | 1          |
+| DPOP-2 | Warning  | MREG Output pipelining | 1          |
++--------+----------+------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/tmp_threshold0 input design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/tmp_threshold0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/tmp_threshold0 output design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/tmp_threshold0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/tmp_threshold0 multiplier stage design_2_i/SOC_MOTOR_DRIVER_0/U0/SOC_MOTOR_DRIVER_slave_lite_v1_0_S00_AXI_inst/axi_MOTOR_DRIVER/tmp_threshold0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+

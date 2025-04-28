@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Fri Mar 28 16:15:43 2025
+# Process ID: 10896
+# Current directory: C:/Users/oliwi/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3572
+# Log file: C:/Users/oliwi/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/oliwi/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On        :Laptop-Oli
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :26100
+# Processor Detail  :AMD Ryzen 5 5500U with Radeon Graphics         
+# CPU Frequency     :2096 MHz
+# CPU Physical cores:6
+# CPU Logical cores :12
+# Host memory       :7879 MB
+# Swap memory       :6710 MB
+# Total Virtual     :14590 MB
+# Available Virtual :7190 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/oliwi/Documents/SOC/motor_driver_project/motor_driver_project.xpr
+update_compile_order -fileset sources_1
+archive_project C:/Users/oliwi/Documents/clones/SOC/MOTOR_DRIVER/motor_driver_project.xpr.zip -temp_dir C:/Users/oliwi/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10896-Laptop-Oli -force -include_local_ip_cache -include_config_settings
