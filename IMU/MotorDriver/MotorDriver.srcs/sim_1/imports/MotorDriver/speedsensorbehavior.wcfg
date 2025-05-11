@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_2_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_2_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="25.860000001 ms"></ZoomEndTime>
+      <Cursor1Time time="0.000000000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="268"></NameColumnWidth>
+      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject type="array" fp_name="/design_2_wrapper/AVG_OUT_0">
+      <obj_property name="ElementShortName">AVG_OUT_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">AVG_OUT_0[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_2_wrapper/D_IN_0">
+      <obj_property name="ElementShortName">D_IN_0</obj_property>
+      <obj_property name="ObjectShortName">D_IN_0</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_2_wrapper/D_OUT_0">
+      <obj_property name="ElementShortName">D_OUT_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">D_OUT_0[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_2_wrapper/reset_rtl_0">
+      <obj_property name="ElementShortName">reset_rtl_0</obj_property>
+      <obj_property name="ObjectShortName">reset_rtl_0</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_2_wrapper/sys_clock">
+      <obj_property name="ElementShortName">sys_clock</obj_property>
+      <obj_property name="ObjectShortName">sys_clock</obj_property>
+   </wvobject>
+</wave_config>
