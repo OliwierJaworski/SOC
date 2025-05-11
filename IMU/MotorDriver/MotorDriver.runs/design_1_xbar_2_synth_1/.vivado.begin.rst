@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="pcoli" Host="pcoli-System-Product-Name" Pid="52299" HostCore="12" HostMemory="31736216">
-    </Process>
-</ProcessHandle>
