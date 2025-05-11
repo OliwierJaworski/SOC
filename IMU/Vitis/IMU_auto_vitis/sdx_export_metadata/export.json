@@ -1,0 +1,29 @@
+{
+  "version": "2024.1",
+  "applications": [],
+  "platforms": [
+    {
+      "name": "IIC_included_BITSTREAM"
+    }
+  ],
+  "systems": [
+    {
+      "name": "IIC_app_system",
+      "platform": "E:/vitis_projects/auto_project/full_car/IIC_included_BITSTREAM/export/IIC_included_BITSTREAM/IIC_included_BITSTREAM.xpfm",
+      "sysConfig": "IIC_included_BITSTREAM",
+      "buildConfig": "Debug",
+      "applications": [
+        {
+          "name": "IIC_app",
+          "platform": "E:/vitis_projects/auto_project/full_car/IIC_included_BITSTREAM/export/IIC_included_BITSTREAM/IIC_included_BITSTREAM.xpfm",
+          "platformPath": "E:\\vitis_projects\\auto_project\\full_car\\IIC_included_BITSTREAM\\export\\IIC_included_BITSTREAM",
+          "sysConfig": "IIC_included_BITSTREAM",
+          "domain": "standalone_ps7_cortexa9_0",
+          "system": "IIC_app_system"
+        }
+      ],
+      "platformPath": "E:\\vitis_projects\\auto_project\\full_car\\IIC_included_BITSTREAM\\export\\IIC_included_BITSTREAM"
+    }
+  ],
+  "others": []
+}

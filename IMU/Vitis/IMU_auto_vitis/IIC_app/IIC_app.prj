@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="IIC_app" location="E:/vitis_projects/auto_project/full_car/IIC_app" platform="E:/vitis_projects/auto_project/full_car/IIC_included_BITSTREAM/export/IIC_included_BITSTREAM/IIC_included_BITSTREAM.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="IIC_app_system" sysConfig="IIC_included_BITSTREAM" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="d18ff117d8d13f5c8912ca9a038cb7a7">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1490826797">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2030682608" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
