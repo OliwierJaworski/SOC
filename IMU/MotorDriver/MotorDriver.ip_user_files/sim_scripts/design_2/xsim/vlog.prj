@@ -1,0 +1,8 @@
+verilog xil_defaultlib --include "/tools/Xilinx/Vivado/2024.1/data/xilinx_vip/include" --include "../../../../MotorDriver.gen/sources_1/bd/design_2/ipshared/3242" \
+"../../../bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0_clk_wiz.v" \
+"../../../bd/design_2/ip/design_2_clk_wiz_1_0/design_2_clk_wiz_1_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
