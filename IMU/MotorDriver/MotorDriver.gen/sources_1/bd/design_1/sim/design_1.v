@@ -3,7 +3,7 @@
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2024.1 (lin64) Build 5076996 Wed May 22 18:36:09 MDT 2024
 //Date        : Thu May  1 14:06:28 2025
-//Host        : pcoli-System-Product-Name running 64-bit Ubuntu 24.10
+//Host        : RunarW11
 //Command     : generate_target design_1.bd
 //Design      : design_1
 //Purpose     : IP block netlist
