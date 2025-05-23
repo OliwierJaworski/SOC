@@ -52,3 +52,9 @@ timestamp=[2025-05-23 20:08:46], mode=BUILD, duration=0:00:00.549, duration_ms=5
 timestamp=[2025-05-23 20:11:39], mode=BUILD, duration=0:00:00.298, duration_ms=298, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
 timestamp=[2025-05-23 20:11:49], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
 timestamp=[2025-05-23 20:11:55], mode=BUILD, duration=0:00:00.555, duration_ms=555, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 20:25:55], mode=BUILD, duration=0:00:00.301, duration_ms=301, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 20:26:16], mode=BUILD, duration=0:00:00.299, duration_ms=299, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 20:26:31], mode=BUILD, duration=0:00:00.605, duration_ms=605, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 20:44:21], mode=BUILD, duration=0:00:00.654, duration_ms=654, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 20:44:51], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 21:03:02], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}

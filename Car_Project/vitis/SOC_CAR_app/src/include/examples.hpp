@@ -4,6 +4,9 @@
 #include "../platform.h"
 #include "xgpio.h"
 #include "xparameters.h"
+#include "ultrasoneIP.h"
+#include "sleep.h"
+
 /***********************************************
  * @brief: 		Platform test
  *
@@ -57,6 +60,7 @@ void Switches_Test_NOCB(){
 		}
 		sw_data_PS = sw_data_CS;
 	}
+	cleanup_platform();
 }
 
 /***********************************************
@@ -99,5 +103,37 @@ void Button_Test_NOCB(){
 		}
 		btn_data_PS = btn_data_CS;
 	}
+	cleanup_platform();
 }
+
+
+/***********************************************
+ * @brief: 		TEST of ultrasonic sensor
+ *
+ * @details: 	paste the function into main without any platform init.
+ * 				After which the ultrasonic values will be displayed
+ *
+ * @details:   	extra info:
+ * 					- #include "ultrasoneIP.h"
+ * 					- ULTRASONEIP_S00_AXI_SLV_REG0_OFFSET location to which ultrasonic writes data
+ * 					- US0 = Echo:Y17,triggerW19:
+ * 					- US1 = Echo:Y16,triggerW18:
+ *
+ ***********************************************/
+void ULTRASONE_Test_NOCB(){
+	uint32_t reg_value_uss0{0}, reg_value_uss1{0};
+
+	init_platform();
+
+	while(1){
+		reg_value_uss0 = ULTRASONEIP_mReadReg(XPAR_ULTRASONEIP_0_S00_AXI_BASEADDR, ULTRASONEIP_S00_AXI_SLV_REG0_OFFSET);
+		reg_value_uss1 = ULTRASONEIP_mReadReg(XPAR_ULTRASONEIP_1_S00_AXI_BASEADDR, ULTRASONEIP_S00_AXI_SLV_REG0_OFFSET);
+
+		xil_printf("USS0 = %u, USS1 = %u\r\n",reg_value_uss0, reg_value_uss1);
+		usleep(500000); // 0.5s delay
+	}
+
+	cleanup_platform();
+}
+
 #endif

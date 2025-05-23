@@ -24,6 +24,6 @@
 
 int main()
 {
-	Button_Test_NOCB();
+	ULTRASONE_Test_NOCB();
     return 0;
 }
