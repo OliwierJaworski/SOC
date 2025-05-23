@@ -1,0 +1,97 @@
+18:04:41 DEBUG : Logs will be stored at 'M:/projects/clones/SOC/Car_Project/vitis/IDE.log'.
+18:04:43 INFO  : Platform repository initialization has completed.
+18:04:43 INFO  : Registering command handlers for Vitis TCF services
+18:04:43 INFO  : Launching XSCT server: xsct.bat -n  -interactive M:\projects\clones\SOC\Car_Project\vitis\temp_xsdb_launch_script.tcl
+18:04:44 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+18:04:44 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+18:04:44 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+18:04:46 INFO  : XSCT server has started successfully.
+18:04:46 INFO  : Successfully done setting XSCT server connection channel  
+18:04:49 INFO  : plnx-install-location is set to ''
+18:04:49 INFO  : Successfully done setting workspace for the tool. 
+18:04:49 INFO  : Successfully done query RDI_DATADIR 
+18:07:16 INFO  : Result from executing command 'getProjects': FullCar_AllFeatures_V0_1
+18:07:16 INFO  : Result from executing command 'getPlatforms': 
+18:07:16 WARN  : An unexpected exception occurred in the module 'platform project logging'
+18:07:17 INFO  : Platform 'FullCar_AllFeatures_V0_1' is added to custom repositories.
+18:07:23 INFO  : Platform 'FullCar_AllFeatures_V0_1' is added to custom repositories.
+18:11:25 INFO  : Result from executing command 'getProjects': FullCar_AllFeatures_V0_1
+18:11:25 INFO  : Result from executing command 'getPlatforms': FullCar_AllFeatures_V0_1|M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/FullCar_AllFeatures_V0_1.xpfm
+18:11:29 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+18:15:01 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+18:15:14 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+18:15:22 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+18:24:39 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+18:55:45 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+18:58:36 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+18:59:10 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:04:38 INFO  : Result from executing command 'getProjects': FullCar_AllFeatures_V0_1
+19:04:38 INFO  : Result from executing command 'getPlatforms': 
+19:04:40 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:07:37 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:08:28 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:08:33 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:09:08 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:09:12 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:09:17 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:09:19 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:09:40 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:11:44 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:11:54 INFO  : Result from executing command 'removePlatformRepo': 
+19:12:12 INFO  : Result from executing command 'getProjects': FullCar_AllFeatures_V0_1
+19:12:12 INFO  : Result from executing command 'getPlatforms': 
+19:12:12 INFO  : Checking for BSP changes to sync application flags for project 'AutoProject_app'...
+19:13:55 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+19:15:17 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+19:16:36 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+19:16:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:16:56 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+19:16:56 INFO  : 'jtag frequency' command is executed.
+19:16:56 INFO  : Context for 'APU' is selected.
+19:16:56 INFO  : System reset is completed.
+19:16:59 INFO  : 'after 3000' command is executed.
+19:16:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+19:17:02 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+19:17:02 INFO  : Context for 'APU' is selected.
+19:17:02 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+19:17:02 INFO  : 'configparams force-mem-access 1' command is executed.
+19:17:02 INFO  : Context for 'APU' is selected.
+19:17:02 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+19:17:02 INFO  : 'ps7_init' command is executed.
+19:17:02 INFO  : 'ps7_post_config' command is executed.
+19:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:17:02 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:17:02 INFO  : 'configparams force-mem-access 0' command is executed.
+19:17:02 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:17:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:17:02 INFO  : 'con' command is executed.
+19:17:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:17:02 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
