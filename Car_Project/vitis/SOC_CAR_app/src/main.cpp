@@ -18,16 +18,12 @@
  */
 
 #include <stdio.h>
-#include "platform.h"
-#include "xil_printf.h"
 
+#include "xil_printf.h"
+#include "examples.hpp"
 
 int main()
 {
-    init_platform();
-
-    print("Hello World\n\r");
-    print("Successfully ran Hello World application");
-    cleanup_platform();
+	Button_Test_NOCB();
     return 0;
 }
