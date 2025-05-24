@@ -956,3 +956,1340 @@ con
 ----------------End of Script----------------
 
 17:34:59 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+20:41:03 DEBUG : Logs will be stored at 'C:/Git/SOC/Car_Project/vitis/IDE.log'.
+20:41:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Git\SOC\Car_Project\vitis\temp_xsdb_launch_script.tcl
+20:41:09 INFO  : Registering command handlers for Vitis TCF services
+20:41:09 INFO  : Platform repository initialization has completed.
+20:41:10 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+20:41:10 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+20:41:10 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+20:41:12 INFO  : XSCT server has started successfully.
+20:41:12 INFO  : Successfully done setting XSCT server connection channel  
+20:41:12 INFO  : plnx-install-location is set to ''
+20:41:12 INFO  : Successfully done query RDI_DATADIR 
+20:41:13 INFO  : Successfully done setting workspace for the tool. 
+20:42:51 INFO  : Platform 'Motor_and_speed_driver' is added to custom repositories.
+20:42:53 INFO  : [Import] Updating active build configuration of the system project 'test_app_system' to 'Debug' after the import.
+20:43:16 INFO  : Result from executing command 'getProjects': Motor_and_speed_driver
+20:43:16 INFO  : Result from executing command 'getPlatforms': Motor_and_speed_driver|C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/Motor_and_speed_driver.xpfm
+20:44:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:44:02 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:44:02 INFO  : 'jtag frequency' command is executed.
+20:44:02 INFO  : Context for 'APU' is selected.
+20:44:03 ERROR : Cannot reset APU. Timeout waiting DAP to reconnect after reset
+20:44:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+----------------End of Script----------------
+
+20:44:03 ERROR : Cannot reset APU. Timeout waiting DAP to reconnect after reset
+20:44:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:44:51 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:44:51 INFO  : 'jtag frequency' command is executed.
+20:44:51 INFO  : Context for 'APU' is selected.
+20:44:52 INFO  : System reset is completed.
+20:44:55 INFO  : 'after 3000' command is executed.
+20:44:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:44:57 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+20:44:57 INFO  : Context for 'APU' is selected.
+20:44:57 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:44:57 INFO  : 'configparams force-mem-access 1' command is executed.
+20:44:57 INFO  : Context for 'APU' is selected.
+20:44:57 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:44:57 INFO  : 'ps7_init' command is executed.
+20:44:57 INFO  : 'ps7_post_config' command is executed.
+20:44:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:44:58 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:44:58 INFO  : 'configparams force-mem-access 0' command is executed.
+20:44:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:44:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:44:58 INFO  : 'con' command is executed.
+20:44:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:44:58 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default_1.tcl'
+20:47:49 INFO  : Disconnected from the channel tcfchan#2.
+20:47:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:47:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:47:59 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+20:47:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:48:00 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:48:00 INFO  : 'jtag frequency' command is executed.
+20:48:00 INFO  : Context for 'APU' is selected.
+20:48:00 INFO  : System reset is completed.
+20:48:03 INFO  : 'after 3000' command is executed.
+20:48:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:48:05 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+20:48:05 INFO  : Context for 'APU' is selected.
+20:48:05 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:48:05 INFO  : 'configparams force-mem-access 1' command is executed.
+20:48:05 INFO  : Context for 'APU' is selected.
+20:48:05 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:48:05 INFO  : 'ps7_init' command is executed.
+20:48:05 INFO  : 'ps7_post_config' command is executed.
+20:48:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:48:06 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:48:06 INFO  : 'configparams force-mem-access 0' command is executed.
+20:48:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:48:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:48:06 INFO  : 'con' command is executed.
+20:48:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:48:06 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default_1.tcl'
+20:49:29 INFO  : Result from executing command 'getProjects': Motor_and_speed_driver
+20:49:29 INFO  : Result from executing command 'getPlatforms': Motor_and_speed_driver|C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/Motor_and_speed_driver.xpfm
+20:49:29 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+20:51:01 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+20:51:10 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+20:51:30 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+20:52:53 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+20:53:11 INFO  : Disconnected from the channel tcfchan#3.
+20:53:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:16 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:53:16 INFO  : 'jtag frequency' command is executed.
+20:53:16 INFO  : Context for 'APU' is selected.
+20:53:16 INFO  : System reset is completed.
+20:53:19 INFO  : 'after 3000' command is executed.
+20:53:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:53:22 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+20:53:22 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:53:25 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+20:53:25 INFO  : Context for 'APU' is selected.
+20:53:25 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:53:25 INFO  : 'configparams force-mem-access 1' command is executed.
+20:53:25 INFO  : Context for 'APU' is selected.
+20:53:25 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:53:26 INFO  : 'ps7_init' command is executed.
+20:53:26 INFO  : 'ps7_post_config' command is executed.
+20:53:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:26 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:53:26 INFO  : 'configparams force-mem-access 0' command is executed.
+20:53:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:53:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:26 INFO  : 'con' command is executed.
+20:53:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:53:26 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+20:53:31 INFO  : Disconnected from the channel tcfchan#5.
+20:53:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+20:53:33 ERROR : Could not find FPGA device on the board for connection 'Local'.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+20:53:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:44 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:53:44 INFO  : 'jtag frequency' command is executed.
+20:53:44 INFO  : Context for 'APU' is selected.
+20:53:44 INFO  : System reset is completed.
+20:53:47 INFO  : 'after 3000' command is executed.
+20:53:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:53:50 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+20:53:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:53:50 INFO  : Context for 'APU' is selected.
+20:53:50 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:53:50 INFO  : 'configparams force-mem-access 1' command is executed.
+20:53:50 INFO  : Context for 'APU' is selected.
+20:53:50 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:53:50 INFO  : 'ps7_init' command is executed.
+20:53:50 INFO  : 'ps7_post_config' command is executed.
+20:53:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:50 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:53:50 INFO  : 'configparams force-mem-access 0' command is executed.
+20:53:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:53:50 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:53:50 INFO  : 'jtag frequency' command is executed.
+20:53:50 INFO  : Context for 'APU' is selected.
+20:53:50 INFO  : System reset is completed.
+20:53:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:53 INFO  : 'after 3000' command is executed.
+20:53:53 ERROR : Already running
+20:53:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:53:56 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+20:53:56 INFO  : Context for 'APU' is selected.
+20:53:56 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:53:56 INFO  : 'configparams force-mem-access 1' command is executed.
+20:53:56 INFO  : Context for 'APU' is selected.
+20:53:56 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:53:56 INFO  : 'ps7_init' command is executed.
+20:53:56 INFO  : 'ps7_post_config' command is executed.
+20:53:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:56 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:53:56 INFO  : 'configparams force-mem-access 0' command is executed.
+20:53:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:53:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:53:57 INFO  : 'con' command is executed.
+20:53:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:53:57 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+20:55:10 INFO  : Disconnected from the channel tcfchan#6.
+20:55:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:55:11 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:55:11 INFO  : 'jtag frequency' command is executed.
+20:55:11 INFO  : Context for 'APU' is selected.
+20:55:11 INFO  : System reset is completed.
+20:55:14 INFO  : 'after 3000' command is executed.
+20:55:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:55:16 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+20:55:17 INFO  : Context for 'APU' is selected.
+20:55:17 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:55:17 INFO  : 'configparams force-mem-access 1' command is executed.
+20:55:17 INFO  : Context for 'APU' is selected.
+20:55:17 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:55:17 INFO  : 'ps7_init' command is executed.
+20:55:17 INFO  : 'ps7_post_config' command is executed.
+20:55:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:55:17 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:55:17 INFO  : 'configparams force-mem-access 0' command is executed.
+20:55:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:55:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:55:17 INFO  : 'con' command is executed.
+20:55:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:55:17 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+20:56:29 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+20:56:34 INFO  : Disconnected from the channel tcfchan#7.
+20:56:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:35 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:56:35 INFO  : 'jtag frequency' command is executed.
+20:56:35 INFO  : Context for 'APU' is selected.
+20:56:35 INFO  : System reset is completed.
+20:56:38 INFO  : 'after 3000' command is executed.
+20:56:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:56:40 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+20:56:40 INFO  : Context for 'APU' is selected.
+20:56:40 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:56:40 INFO  : 'configparams force-mem-access 1' command is executed.
+20:56:40 INFO  : Context for 'APU' is selected.
+20:56:40 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:56:41 INFO  : 'ps7_init' command is executed.
+20:56:41 INFO  : 'ps7_post_config' command is executed.
+20:56:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:41 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:56:41 INFO  : 'configparams force-mem-access 0' command is executed.
+20:56:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:56:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:56:41 INFO  : 'con' command is executed.
+20:56:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:56:41 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+20:56:53 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+20:56:58 INFO  : Disconnected from the channel tcfchan#8.
+20:56:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:59 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:56:59 INFO  : 'jtag frequency' command is executed.
+20:56:59 INFO  : Context for 'APU' is selected.
+20:56:59 INFO  : System reset is completed.
+20:57:02 INFO  : 'after 3000' command is executed.
+20:57:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:57:05 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+20:57:05 INFO  : Context for 'APU' is selected.
+20:57:05 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:57:05 INFO  : 'configparams force-mem-access 1' command is executed.
+20:57:05 INFO  : Context for 'APU' is selected.
+20:57:05 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:57:05 INFO  : 'ps7_init' command is executed.
+20:57:05 INFO  : 'ps7_post_config' command is executed.
+20:57:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:57:05 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:57:05 INFO  : 'configparams force-mem-access 0' command is executed.
+20:57:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:57:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:57:05 INFO  : 'con' command is executed.
+20:57:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:57:05 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+20:57:17 INFO  : Disconnected from the channel tcfchan#9.
+20:57:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:57:18 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:57:18 INFO  : 'jtag frequency' command is executed.
+20:57:18 INFO  : Context for 'APU' is selected.
+20:57:18 INFO  : System reset is completed.
+20:57:21 INFO  : 'after 3000' command is executed.
+20:57:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:57:24 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+20:57:24 INFO  : Context for 'APU' is selected.
+20:57:24 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:57:24 INFO  : 'configparams force-mem-access 1' command is executed.
+20:57:24 INFO  : Context for 'APU' is selected.
+20:57:24 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:57:24 INFO  : 'ps7_init' command is executed.
+20:57:24 INFO  : 'ps7_post_config' command is executed.
+20:57:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:57:24 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:57:24 INFO  : 'configparams force-mem-access 0' command is executed.
+20:57:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:57:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:57:24 INFO  : 'con' command is executed.
+20:57:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:57:24 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+20:57:30 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+20:57:34 INFO  : Disconnected from the channel tcfchan#10.
+20:57:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:57:35 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:57:35 INFO  : 'jtag frequency' command is executed.
+20:57:35 INFO  : Context for 'APU' is selected.
+20:57:35 INFO  : System reset is completed.
+20:57:38 INFO  : 'after 3000' command is executed.
+20:57:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:57:41 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+20:57:41 INFO  : Context for 'APU' is selected.
+20:57:41 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+20:57:41 INFO  : 'configparams force-mem-access 1' command is executed.
+20:57:41 INFO  : Context for 'APU' is selected.
+20:57:41 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+20:57:41 INFO  : 'ps7_init' command is executed.
+20:57:41 INFO  : 'ps7_post_config' command is executed.
+20:57:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:57:41 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:57:41 INFO  : 'configparams force-mem-access 0' command is executed.
+20:57:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:57:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:57:42 INFO  : 'con' command is executed.
+20:57:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:57:42 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+21:04:30 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+21:04:47 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+21:04:53 INFO  : Disconnected from the channel tcfchan#11.
+21:04:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:04:54 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:04:54 INFO  : 'jtag frequency' command is executed.
+21:04:54 INFO  : Context for 'APU' is selected.
+21:04:54 INFO  : System reset is completed.
+21:04:57 INFO  : 'after 3000' command is executed.
+21:04:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:05:00 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+21:05:00 INFO  : Context for 'APU' is selected.
+21:05:00 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+21:05:00 INFO  : 'configparams force-mem-access 1' command is executed.
+21:05:00 INFO  : Context for 'APU' is selected.
+21:05:00 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+21:05:00 INFO  : 'ps7_init' command is executed.
+21:05:00 INFO  : 'ps7_post_config' command is executed.
+21:05:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:05:00 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:05:01 INFO  : 'configparams force-mem-access 0' command is executed.
+21:05:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:05:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:05:01 INFO  : 'con' command is executed.
+21:05:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:05:01 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+21:07:23 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+21:12:09 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+21:51:20 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+21:51:59 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+21:52:30 INFO  : Disconnected from the channel tcfchan#12.
+21:52:31 INFO  : The hardware specification used by project 'test_app' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+21:52:31 INFO  : The file 'C:\Git\SOC\Car_Project\vitis\test_app\_ide\bitstream\FullCar_AllFeatures_V0_1.bit' stored in project is removed.
+21:52:31 INFO  : The file 'C:\Git\SOC\Car_Project\vitis\test_app\_ide\bitstream\motor_speed.bit' stored in project is removed.
+21:52:31 INFO  : The updated bitstream files are copied from platform to folder 'C:\Git\SOC\Car_Project\vitis\test_app\_ide\bitstream' in project 'test_app'.
+21:52:31 INFO  : The file 'C:\Git\SOC\Car_Project\vitis\test_app\_ide\psinit\ps7_init.tcl' stored in project is removed.
+21:52:38 INFO  : The updated ps init files are copied from platform to folder 'C:\Git\SOC\Car_Project\vitis\test_app\_ide\psinit' in project 'test_app'.
+21:52:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:52:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:52:38 INFO  : 'jtag frequency' command is executed.
+21:52:38 INFO  : Context for 'APU' is selected.
+21:52:38 INFO  : System reset is completed.
+21:52:41 INFO  : 'after 3000' command is executed.
+21:52:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:52:43 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+21:52:43 INFO  : Context for 'APU' is selected.
+21:52:43 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+21:52:43 INFO  : 'configparams force-mem-access 1' command is executed.
+21:52:43 INFO  : Context for 'APU' is selected.
+21:52:43 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+21:52:44 INFO  : 'ps7_init' command is executed.
+21:52:44 INFO  : 'ps7_post_config' command is executed.
+21:52:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:52:44 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:52:44 INFO  : 'configparams force-mem-access 0' command is executed.
+21:52:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:52:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:52:44 INFO  : 'con' command is executed.
+21:52:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:52:44 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+21:52:55 INFO  : Disconnected from the channel tcfchan#13.
+21:52:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:52:56 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:52:56 INFO  : 'jtag frequency' command is executed.
+21:52:56 INFO  : Context for 'APU' is selected.
+21:52:56 INFO  : System reset is completed.
+21:52:59 INFO  : 'after 3000' command is executed.
+21:53:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:53:02 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+21:53:02 INFO  : Context for 'APU' is selected.
+21:53:02 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+21:53:02 INFO  : 'configparams force-mem-access 1' command is executed.
+21:53:02 INFO  : Context for 'APU' is selected.
+21:53:02 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+21:53:02 INFO  : 'ps7_init' command is executed.
+21:53:02 INFO  : 'ps7_post_config' command is executed.
+21:53:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:53:02 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:53:03 INFO  : 'configparams force-mem-access 0' command is executed.
+21:53:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:53:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:53:03 INFO  : 'con' command is executed.
+21:53:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:53:03 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\debugger_test_app-default.tcl'
+21:53:55 INFO  : Disconnected from the channel tcfchan#14.
+21:53:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:53:57 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:53:57 INFO  : 'jtag frequency' command is executed.
+21:53:57 INFO  : Context for 'APU' is selected.
+21:53:57 INFO  : System reset is completed.
+21:54:00 INFO  : 'after 3000' command is executed.
+21:54:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:54:02 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+21:54:02 INFO  : Context for 'APU' is selected.
+21:54:02 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+21:54:02 INFO  : 'configparams force-mem-access 1' command is executed.
+21:54:02 INFO  : Context for 'APU' is selected.
+21:54:02 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+21:54:02 INFO  : 'ps7_init' command is executed.
+21:54:02 INFO  : 'ps7_post_config' command is executed.
+21:54:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:03 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:54:03 INFO  : 'configparams force-mem-access 0' command is executed.
+21:54:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:54:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:54:03 INFO  : 'con' command is executed.
+21:54:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:54:03 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:01:45 INFO  : Disconnected from the channel tcfchan#15.
+22:01:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:01:45 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:01:45 INFO  : 'jtag frequency' command is executed.
+22:01:45 INFO  : Context for 'APU' is selected.
+22:01:45 INFO  : System reset is completed.
+22:01:48 INFO  : 'after 3000' command is executed.
+22:01:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:01:50 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:01:50 INFO  : Context for 'APU' is selected.
+22:01:50 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:01:50 INFO  : 'configparams force-mem-access 1' command is executed.
+22:01:50 INFO  : Context for 'APU' is selected.
+22:01:50 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:01:51 INFO  : 'ps7_init' command is executed.
+22:01:51 INFO  : 'ps7_post_config' command is executed.
+22:01:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:01:51 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:01:51 INFO  : 'configparams force-mem-access 0' command is executed.
+22:01:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:01:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:01:51 INFO  : 'con' command is executed.
+22:01:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:01:51 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:02:03 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:02:06 INFO  : Disconnected from the channel tcfchan#16.
+22:02:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:02:06 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:02:06 INFO  : 'jtag frequency' command is executed.
+22:02:07 INFO  : Context for 'APU' is selected.
+22:02:07 INFO  : System reset is completed.
+22:02:10 INFO  : 'after 3000' command is executed.
+22:02:10 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:02:12 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:02:12 INFO  : Context for 'APU' is selected.
+22:02:12 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:02:12 INFO  : 'configparams force-mem-access 1' command is executed.
+22:02:12 INFO  : Context for 'APU' is selected.
+22:02:12 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:02:13 INFO  : 'ps7_init' command is executed.
+22:02:13 INFO  : 'ps7_post_config' command is executed.
+22:02:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:13 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:02:13 INFO  : 'configparams force-mem-access 0' command is executed.
+22:02:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:02:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:13 INFO  : 'con' command is executed.
+22:02:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:02:13 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:02:43 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:02:47 INFO  : Disconnected from the channel tcfchan#17.
+22:02:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:02:47 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:02:47 INFO  : 'jtag frequency' command is executed.
+22:02:47 INFO  : Context for 'APU' is selected.
+22:02:47 INFO  : System reset is completed.
+22:02:50 INFO  : 'after 3000' command is executed.
+22:02:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:02:53 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:02:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:02:53 INFO  : Context for 'APU' is selected.
+22:02:53 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:02:53 INFO  : 'configparams force-mem-access 1' command is executed.
+22:02:53 INFO  : Context for 'APU' is selected.
+22:02:53 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:02:53 INFO  : 'ps7_init' command is executed.
+22:02:53 INFO  : 'ps7_post_config' command is executed.
+22:02:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:54 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:02:54 INFO  : 'configparams force-mem-access 0' command is executed.
+22:02:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:02:54 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:02:54 INFO  : 'jtag frequency' command is executed.
+22:02:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:02:54 INFO  : Context for 'APU' is selected.
+22:02:54 INFO  : 'con' command is executed.
+22:02:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:02:54 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:02:54 INFO  : System reset is completed.
+22:02:57 INFO  : 'after 3000' command is executed.
+22:02:57 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:02:59 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:02:59 INFO  : Context for 'APU' is selected.
+22:02:59 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:02:59 INFO  : 'configparams force-mem-access 1' command is executed.
+22:02:59 INFO  : Context for 'APU' is selected.
+22:02:59 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:03:00 INFO  : 'ps7_init' command is executed.
+22:03:00 INFO  : 'ps7_post_config' command is executed.
+22:03:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:03:00 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:03:00 INFO  : 'configparams force-mem-access 0' command is executed.
+22:03:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:03:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:03:00 INFO  : 'con' command is executed.
+22:03:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:03:00 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:04:28 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:04:33 INFO  : Disconnected from the channel tcfchan#18.
+22:04:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:04:33 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:04:33 INFO  : 'jtag frequency' command is executed.
+22:04:33 INFO  : Context for 'APU' is selected.
+22:04:33 INFO  : System reset is completed.
+22:04:36 INFO  : 'after 3000' command is executed.
+22:04:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:04:38 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:04:38 INFO  : Context for 'APU' is selected.
+22:04:38 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:04:38 INFO  : 'configparams force-mem-access 1' command is executed.
+22:04:38 INFO  : Context for 'APU' is selected.
+22:04:39 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:04:39 INFO  : 'ps7_init' command is executed.
+22:04:39 INFO  : 'ps7_post_config' command is executed.
+22:04:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:04:39 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:04:39 INFO  : 'configparams force-mem-access 0' command is executed.
+22:04:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:04:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:04:39 INFO  : 'con' command is executed.
+22:04:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:04:39 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:05:26 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:05:29 INFO  : Disconnected from the channel tcfchan#19.
+22:05:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:05:30 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:05:30 INFO  : 'jtag frequency' command is executed.
+22:05:30 INFO  : Context for 'APU' is selected.
+22:05:30 INFO  : System reset is completed.
+22:05:33 INFO  : 'after 3000' command is executed.
+22:05:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:05:35 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:05:35 INFO  : Context for 'APU' is selected.
+22:05:35 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:05:35 INFO  : 'configparams force-mem-access 1' command is executed.
+22:05:35 INFO  : Context for 'APU' is selected.
+22:05:35 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:05:35 INFO  : 'ps7_init' command is executed.
+22:05:36 INFO  : 'ps7_post_config' command is executed.
+22:05:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:05:36 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:05:36 INFO  : 'configparams force-mem-access 0' command is executed.
+22:05:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:05:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:05:36 INFO  : 'con' command is executed.
+22:05:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:05:36 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:06:35 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:06:38 INFO  : Disconnected from the channel tcfchan#20.
+22:06:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:06:38 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:06:38 INFO  : 'jtag frequency' command is executed.
+22:06:38 INFO  : Context for 'APU' is selected.
+22:06:38 INFO  : System reset is completed.
+22:06:41 INFO  : 'after 3000' command is executed.
+22:06:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:06:44 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:06:44 INFO  : Context for 'APU' is selected.
+22:06:44 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:06:44 INFO  : 'configparams force-mem-access 1' command is executed.
+22:06:44 INFO  : Context for 'APU' is selected.
+22:06:44 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:06:44 INFO  : 'ps7_init' command is executed.
+22:06:44 INFO  : 'ps7_post_config' command is executed.
+22:06:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:06:44 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:06:45 INFO  : 'configparams force-mem-access 0' command is executed.
+22:06:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:06:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:06:45 INFO  : 'con' command is executed.
+22:06:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:06:45 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:06:53 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:07:07 INFO  : Disconnected from the channel tcfchan#21.
+22:07:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:07:08 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:07:08 INFO  : 'jtag frequency' command is executed.
+22:07:08 INFO  : Context for 'APU' is selected.
+22:07:08 INFO  : System reset is completed.
+22:07:11 INFO  : 'after 3000' command is executed.
+22:07:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:07:13 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:07:13 INFO  : Context for 'APU' is selected.
+22:07:13 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:07:13 INFO  : 'configparams force-mem-access 1' command is executed.
+22:07:13 INFO  : Context for 'APU' is selected.
+22:07:13 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:07:13 INFO  : 'ps7_init' command is executed.
+22:07:13 INFO  : 'ps7_post_config' command is executed.
+22:07:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:14 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:07:14 INFO  : 'configparams force-mem-access 0' command is executed.
+22:07:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:07:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:14 INFO  : 'con' command is executed.
+22:07:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:07:14 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:07:25 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:07:30 INFO  : Disconnected from the channel tcfchan#22.
+22:07:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:07:30 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:07:30 INFO  : 'jtag frequency' command is executed.
+22:07:30 INFO  : Context for 'APU' is selected.
+22:07:30 INFO  : System reset is completed.
+22:07:33 INFO  : 'after 3000' command is executed.
+22:07:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:07:35 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:07:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:07:35 INFO  : Context for 'APU' is selected.
+22:07:35 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:07:35 INFO  : 'configparams force-mem-access 1' command is executed.
+22:07:35 INFO  : Context for 'APU' is selected.
+22:07:35 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:07:36 INFO  : 'ps7_init' command is executed.
+22:07:36 INFO  : 'ps7_post_config' command is executed.
+22:07:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:36 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:07:36 INFO  : 'configparams force-mem-access 0' command is executed.
+22:07:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:07:36 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:07:36 INFO  : 'jtag frequency' command is executed.
+22:07:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:36 INFO  : Context for 'APU' is selected.
+22:07:36 INFO  : 'con' command is executed.
+22:07:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:07:36 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:07:36 INFO  : System reset is completed.
+22:07:39 INFO  : 'after 3000' command is executed.
+22:07:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:07:42 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:07:42 INFO  : Context for 'APU' is selected.
+22:07:42 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:07:42 INFO  : 'configparams force-mem-access 1' command is executed.
+22:07:42 INFO  : Context for 'APU' is selected.
+22:07:42 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:07:42 INFO  : 'ps7_init' command is executed.
+22:07:42 INFO  : 'ps7_post_config' command is executed.
+22:07:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:42 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:07:42 INFO  : 'configparams force-mem-access 0' command is executed.
+22:07:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:07:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:07:42 INFO  : 'con' command is executed.
+22:07:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:07:42 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:08:10 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:08:15 INFO  : Disconnected from the channel tcfchan#23.
+22:08:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:08:16 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:08:16 INFO  : 'jtag frequency' command is executed.
+22:08:16 INFO  : Context for 'APU' is selected.
+22:08:16 INFO  : System reset is completed.
+22:08:19 INFO  : 'after 3000' command is executed.
+22:08:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:08:21 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:08:21 INFO  : Context for 'APU' is selected.
+22:08:21 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:08:21 INFO  : 'configparams force-mem-access 1' command is executed.
+22:08:21 INFO  : Context for 'APU' is selected.
+22:08:21 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:08:21 INFO  : 'ps7_init' command is executed.
+22:08:21 INFO  : 'ps7_post_config' command is executed.
+22:08:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:08:22 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:08:22 INFO  : 'configparams force-mem-access 0' command is executed.
+22:08:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:08:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:08:22 INFO  : 'con' command is executed.
+22:08:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:08:22 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:39:06 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:46:47 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:48:00 INFO  : Disconnected from the channel tcfchan#24.
+22:48:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:48:00 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:48:00 INFO  : 'jtag frequency' command is executed.
+22:48:00 INFO  : Context for 'APU' is selected.
+22:48:00 INFO  : System reset is completed.
+22:48:03 INFO  : 'after 3000' command is executed.
+22:48:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:48:06 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:48:06 INFO  : Context for 'APU' is selected.
+22:48:06 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:48:06 INFO  : 'configparams force-mem-access 1' command is executed.
+22:48:06 INFO  : Context for 'APU' is selected.
+22:48:06 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:48:06 INFO  : 'ps7_init' command is executed.
+22:48:06 INFO  : 'ps7_post_config' command is executed.
+22:48:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:48:06 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:48:06 INFO  : 'configparams force-mem-access 0' command is executed.
+22:48:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:48:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:48:06 INFO  : 'con' command is executed.
+22:48:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:48:06 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:49:57 INFO  : Checking for BSP changes to sync application flags for project 'test_app'...
+22:50:00 INFO  : Disconnected from the channel tcfchan#25.
+22:50:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:50:00 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+22:50:00 INFO  : 'jtag frequency' command is executed.
+22:50:00 INFO  : Context for 'APU' is selected.
+22:50:00 INFO  : System reset is completed.
+22:50:03 INFO  : 'after 3000' command is executed.
+22:50:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+22:50:05 INFO  : Device configured successfully with "C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit"
+22:50:06 INFO  : Context for 'APU' is selected.
+22:50:06 INFO  : Hardware design and registers information is loaded from 'C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa'.
+22:50:06 INFO  : 'configparams force-mem-access 1' command is executed.
+22:50:06 INFO  : Context for 'APU' is selected.
+22:50:06 INFO  : Sourcing of 'C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl' is done.
+22:50:06 INFO  : 'ps7_init' command is executed.
+22:50:06 INFO  : 'ps7_post_config' command is executed.
+22:50:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:50:06 INFO  : The application 'C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:50:06 INFO  : 'configparams force-mem-access 0' command is executed.
+22:50:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Git/SOC/Car_Project/vitis/test_app/_ide/bitstream/motor_speed.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Git/SOC/Car_Project/vitis/Motor_and_speed_driver/export/Motor_and_speed_driver/hw/motor_speed.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Git/SOC/Car_Project/vitis/test_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Git/SOC/Car_Project/vitis/test_app/Debug/test_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:50:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:50:06 INFO  : 'con' command is executed.
+22:50:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:50:06 INFO  : Launch script is exported to file 'C:\Git\SOC\Car_Project\vitis\test_app_system\_ide\scripts\systemdebugger_test_app_system_standalone.tcl'
+22:52:32 INFO  : Disconnected from the channel tcfchan#26.
