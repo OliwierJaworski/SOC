@@ -79,7 +79,6 @@ void Switches_Test_NOCB(){
  * 						- D20 = bitmask 0b0010;
  * 						- L20 = bitmask 0b0100;
  * 						- L19 = bitmask 0b1000;
- *
  ***********************************************/
 void Button_Test_NOCB(){
 	init_platform();

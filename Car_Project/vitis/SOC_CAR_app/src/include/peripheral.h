@@ -16,6 +16,17 @@
 #define SWITCH_CHANNEL 1
 #define BUTTON_CHANNEL 2
 
+/***********************************************
+ * @author:		Runar Jans
+ * @brief: 		singleton class controlling buttons connected to pins: D19, D20, L20, L19
+ *
+ * @details:   	extra info:
+ * 					- from right to left :
+ * 						- D19 = bitmask 0b0001;
+ * 						- D20 = bitmask 0b0010;
+ * 						- L20 = bitmask 0b0100;
+ * 						- L19 = bitmask 0b1000;
+ ***********************************************/
 class BUTTONS {
 public:
 	int GetStatus(){return Status;}
@@ -25,12 +36,21 @@ private:
 	static void ButtonIsr(void *CallbackRef);
 	int ISR_setup();
 
-	int Status;
-	static XGpio GpioBtn;
-	static XScuGic Intc;
-	XScuGic_Config *IntcConfig;
+	int 			Status;
+	static XGpio 	GpioBtn;
+	static XScuGic 	Intc;
+	XScuGic_Config*	IntcConfig;
 };
 
+/***********************************************
+ * @author:		Runar Jans
+ * @brief: 		singleton class controlling switches connected to pins: M19, M20
+ *
+ * @details:   	extra info:
+ * 					- M20(right switch) = bitmask 0b10;
+ * 					- M19(left switch)  = bitmask 0b01
+
+ ***********************************************/
 class SWITCHES {
 public:
 	int GetStatus(){return Status;}
@@ -40,10 +60,10 @@ private:
 	static void ButtonIsr(void *CallbackRef);
 	int ISR_setup();
 
-	int Status;
-	static XGpio GpioSws;
-	static XScuGic Intc;
-	XScuGic_Config *IntcConfig;
+	int 			Status;
+	static XGpio 	GpioSws;
+	static XScuGic 	Intc;
+	XScuGic_Config*	IntcConfig;
 };
 
 #endif

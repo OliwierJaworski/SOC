@@ -5,7 +5,7 @@
 
 int main()
 {
-	const SWITCHES& sw{ SWITCHES::instance() };
+	const BUTTONS& sw{ BUTTONS::instance() };
 	while(1){
 
 	}

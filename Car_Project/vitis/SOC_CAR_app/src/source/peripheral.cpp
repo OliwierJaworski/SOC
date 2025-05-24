@@ -5,6 +5,7 @@ XScuGic BUTTONS::Intc;
 XGpio SWITCHES::GpioSws;
 XScuGic SWITCHES::Intc;
 
+// ------------------- Class constructors -------------------
 BUTTONS::BUTTONS(){
 
 	Status = XGpio_Initialize(&GpioBtn, GPIO_DEVICE_ID);
@@ -24,6 +25,7 @@ SWITCHES::SWITCHES(){
 	ISR_setup();
 }
 
+// ------------------- Interrupt Callbacks -------------------
 void
 BUTTONS::ButtonIsr(void *CallbackRef){
 	u32 btn_val = XGpio_DiscreteRead(&GpioBtn, BUTTON_CHANNEL);
@@ -42,6 +44,7 @@ SWITCHES::ButtonIsr(void *CallbackRef){
 	XGpio_InterruptClear(&GpioSws, XGPIO_IR_CH1_MASK);
 }
 
+// ------------------- Interrupt Setups -------------------
 int
 BUTTONS::ISR_setup(){
 	XGpio_InterruptEnable(&GpioBtn, XGPIO_IR_CH2_MASK);
