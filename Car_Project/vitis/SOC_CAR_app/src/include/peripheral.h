@@ -31,4 +31,19 @@ private:
 	XScuGic_Config *IntcConfig;
 };
 
+class SWITCHES {
+public:
+	int GetStatus(){return Status;}
+	static const SWITCHES& instance(){static const SWITCHES SWS; return SWS;}
+private:
+	SWITCHES();
+	static void ButtonIsr(void *CallbackRef);
+	int ISR_setup();
+
+	int Status;
+	static XGpio GpioSws;
+	static XScuGic Intc;
+	XScuGic_Config *IntcConfig;
+};
+
 #endif

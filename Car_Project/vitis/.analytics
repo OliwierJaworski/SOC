@@ -104,3 +104,7 @@ timestamp=[2025-05-24 20:32:24], mode=BUILD, duration=0:00:00.303, duration_ms=3
 timestamp=[2025-05-24 20:32:43], mode=BUILD, duration=0:00:00.651, duration_ms=651, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
 timestamp=[2025-05-24 20:33:27], mode=BUILD, duration=0:00:00.248, duration_ms=248, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
 timestamp=[2025-05-24 20:34:20], mode=BUILD, duration=0:00:00.713, duration_ms=713, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 21:12:28], mode=BUILD, duration=0:00:00.928, duration_ms=928, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 21:12:46], mode=BUILD, duration=0:00:01.175, duration_ms=1175, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 21:13:10], mode=BUILD, duration=0:00:00.814, duration_ms=814, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 21:13:55], mode=BUILD, duration=0:00:00.715, duration_ms=715, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
