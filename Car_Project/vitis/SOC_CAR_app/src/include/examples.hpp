@@ -140,20 +140,17 @@ void ULTRASONE_Test_NOCB(){
 	cleanup_platform();
 }
 
+
+/***********************************************
+ * @brief: 		timer test callback function
+ *
+ * @details: 	function called on each timer interrupt
+ ***********************************************/
+
 XTmrCtr TmrCtrInstance;
 XScuGic IntcInstance;
 XScuGic_Config *IntcConfig;
-/***********************************************
- * @brief: 		timer test
- *
- * @details: 	paste the function into main without any platform init.
- *
- * @details:   	extra info:
- * 					- https://github.com/Xilinx/embeddedsw/blob/master/XilinxProcessorIPLib/drivers/tmrctr/examples/xtmrctr_fast_intr_example.c#L474
- * 					- #include "xtmrctr.h"
- * 					- #include "xintc.h"
- * 					- #include "xinterrupt_wrap.h"
- ***********************************************/
+
 void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
 {
 	XTmrCtr *InstancePtr = (XTmrCtr *)CallBackRef;
@@ -179,6 +176,9 @@ void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
  * 					- #include "xtmrctr.h"
  * 					- #include "xintc.h"
  * 					- #include "xinterrupt_wrap.h"
+ * 					- XTmrCtr TmrCtrInstance;
+ *					- XScuGic IntcInstance;
+ *					- XScuGic_Config *IntcConfig;
  ***********************************************/
 void TimerTest_CB(){
 	constexpr u32 TMR_ID 		= XPAR_TMRCTR_1_DEVICE_ID;
