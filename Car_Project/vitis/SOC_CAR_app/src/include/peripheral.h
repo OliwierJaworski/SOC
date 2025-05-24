@@ -66,4 +66,56 @@ private:
 	XScuGic_Config*	IntcConfig;
 };
 
+/***********************************************
+ * @author:		Oliwier Jaworski
+ * @brief: 		singleton class controlling timer_1 interrupt
+ *
+ * @details:   	extra info:
+ * 					- This timer interrupt will be used for controlling logic flow
+ * 					- Interrupts every: CLK/10 -> 10_000_000 clock cycles
+ * 					- reloading interrupt
+ * 					- counting down interrupt
+ ***********************************************/
+class TIMER_1_ {
+public:
+	int GetStatus(){return Status;}
+	static const TIMER_1_& instance(){static const TIMER_1_ TS; return TS;}
+private:
+	TIMER_1_();
+	static void Timer_1_Isr(void *CallBackRef, u8 TmrCtrNumber);
+	int ISR_setup();
+
+	XTmrCtr TmrCtrInstance;
+	XScuGic IntcInstance;
+	XScuGic_Config *IntcConfig;
+
+	int 			Status{0};
+	static constexpr u32 	TMR_ID{XPAR_TMRCTR_1_DEVICE_ID};
+	static constexpr u32 	TMR_INT_ID{XPAR_FABRIC_TMRCTR_1_VEC_ID};
+	static constexpr u32 	TIMER_CNTR_0{0};
+	static constexpr u32 	RESET_VALUE{0x5F5E100};// 100_000_000 clock cycles
+};
+
+/***********************************************
+ * @author:		Mauro Debruyn
+ * @brief: 		singleton ultrasone_0
+ *
+ * @details:   	extra info:
+ * 					-MIN = ~0
+ * 					-MAX = ~1200
+ * 					- Ultrasone 0
+ * 						-> Sonar_trig = W19
+ * 						-> Sonar_echo = Y17
+ * 					- Ultrasone 1
+ * 						-> Sonar_trig = W18
+ * 						-> Sonar_echo = Y16
+ ***********************************************/
+class ULTRASONE_X {
+public:
+	s16 GetDistance(u8 deviceSelect);
+	static ULTRASONE_X& instance(){static ULTRASONE_X US0; return US0;}
+private:
+	ULTRASONE_X(){};
+	uint32_t reg_value_uss0{0}, reg_value_uss1{0};
+};
 #endif
