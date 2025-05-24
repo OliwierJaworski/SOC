@@ -58,3 +58,33 @@ timestamp=[2025-05-23 20:26:31], mode=BUILD, duration=0:00:00.605, duration_ms=6
 timestamp=[2025-05-23 20:44:21], mode=BUILD, duration=0:00:00.654, duration_ms=654, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
 timestamp=[2025-05-23 20:44:51], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
 timestamp=[2025-05-23 21:03:02], mode=BUILD, duration=0:00:00.612, duration_ms=612, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 21:37:44], mode=WORKBENCH_START, duration=0:00:06.124, duration_ms=6124, data={}
+timestamp=[2025-05-23 21:37:45], mode=WORKBENCH_UI_INIT, duration=0:00:00.589, duration_ms=589, data={editors_count=5, platform_editors_count=3, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=FullCar_AllFeatures_V0_1,RemoteSystemsTempFiles,SOC_CAR_app,SOC_CAR_app_system,test_app,test_app_system}
+timestamp=[2025-05-23 21:37:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.016, duration_ms=16, data={}
+timestamp=[2025-05-23 22:20:34], mode=PLATFORM_GENERATION, duration=0:00:02.460, duration_ms=2460, data={name=FullCar_AllFeatures_V0_1}
+timestamp=[2025-05-23 22:20:36], mode=BUILD, duration=0:00:00.435, duration_ms=435, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 22:21:03], mode=BUILD, duration=0:00:00.296, duration_ms=296, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 22:22:42], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-23 22:23:51], mode=BUILD, duration=0:00:00.347, duration_ms=347, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 13:33:38], mode=WORKBENCH_START, duration=0:00:08.302, duration_ms=8302, data={}
+timestamp=[2025-05-24 13:33:39], mode=WORKBENCH_UI_INIT, duration=0:00:00.676, duration_ms=676, data={editors_count=3, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=FullCar_AllFeatures_V0_1,RemoteSystemsTempFiles,SOC_CAR_app,SOC_CAR_app_system,test_app,test_app_system}
+timestamp=[2025-05-24 13:33:39], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.093, duration_ms=93, data={}
+timestamp=[2025-05-24 13:45:27], mode=BUILD, duration=0:00:01.159, duration_ms=1159, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 13:45:53], mode=BUILD, duration=0:00:00.297, duration_ms=297, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 13:54:55], mode=WORKBENCH_START, duration=0:00:13.146, duration_ms=13146, data={}
+timestamp=[2025-05-24 13:54:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.589, duration_ms=589, data={editors_count=3, platform_editors_count=1, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=FullCar_AllFeatures_V0_1,RemoteSystemsTempFiles,SOC_CAR_app,SOC_CAR_app_system,test_app,test_app_system}
+timestamp=[2025-05-24 13:54:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.096, duration_ms=96, data={}
+timestamp=[2025-05-24 13:55:58], mode=BUILD, duration=0:00:01.167, duration_ms=1167, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 13:56:41], mode=BUILD, duration=0:00:00.362, duration_ms=362, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:08:01], mode=PLATFORM_GENERATION, duration=0:00:04.458, duration_ms=4458, data={name=FullCar_AllFeatures_V0_1}
+timestamp=[2025-05-24 17:08:02], mode=BUILD, duration=0:00:00.869, duration_ms=869, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:10:01], mode=BUILD, duration=0:00:01.150, duration_ms=1150, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:10:53], mode=BUILD, duration=0:00:00.595, duration_ms=595, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:13:38], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:15:20], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:16:14], mode=BUILD, duration=0:00:00.603, duration_ms=603, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:20:31], mode=BUILD, duration=0:00:00.600, duration_ms=600, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:24:02], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:30:23], mode=BUILD, duration=0:00:00.604, duration_ms=604, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:34:30], mode=BUILD, duration=0:00:00.299, duration_ms=299, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}
+timestamp=[2025-05-24 17:34:47], mode=BUILD, duration=0:00:00.601, duration_ms=601, data={name=SOC_CAR_app, configuration=Debug, clean_build=false}

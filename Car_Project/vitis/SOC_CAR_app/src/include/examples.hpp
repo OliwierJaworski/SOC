@@ -6,6 +6,9 @@
 #include "xparameters.h"
 #include "ultrasoneIP.h"
 #include "sleep.h"
+#include "xtmrctr.h"
+#include "xinterrupt_wrap.h"
+#include "xscugic.h"
 
 /***********************************************
  * @brief: 		Platform test
@@ -118,12 +121,13 @@ void Button_Test_NOCB(){
  * 					- ULTRASONEIP_S00_AXI_SLV_REG0_OFFSET location to which ultrasonic writes data
  * 					- US0 = Echo:Y17,triggerW19:
  * 					- US1 = Echo:Y16,triggerW18:
- *
+ *					-min value =0, max = ~1200
  ***********************************************/
 void ULTRASONE_Test_NOCB(){
 	uint32_t reg_value_uss0{0}, reg_value_uss1{0};
 
 	init_platform();
+	print("TESTING ULTRASONE_Test_NOCB\n\r");
 
 	while(1){
 		reg_value_uss0 = ULTRASONEIP_mReadReg(XPAR_ULTRASONEIP_0_S00_AXI_BASEADDR, ULTRASONEIP_S00_AXI_SLV_REG0_OFFSET);
@@ -131,6 +135,106 @@ void ULTRASONE_Test_NOCB(){
 
 		xil_printf("USS0 = %u, USS1 = %u\r\n",reg_value_uss0, reg_value_uss1);
 		usleep(500000); // 0.5s delay
+	}
+
+	cleanup_platform();
+}
+
+XTmrCtr TmrCtrInstance;
+XScuGic IntcInstance;
+XScuGic_Config *IntcConfig;
+/***********************************************
+ * @brief: 		timer test
+ *
+ * @details: 	paste the function into main without any platform init.
+ *
+ * @details:   	extra info:
+ * 					- https://github.com/Xilinx/embeddedsw/blob/master/XilinxProcessorIPLib/drivers/tmrctr/examples/xtmrctr_fast_intr_example.c#L474
+ * 					- #include "xtmrctr.h"
+ * 					- #include "xintc.h"
+ * 					- #include "xinterrupt_wrap.h"
+ ***********************************************/
+void TimerCounterHandler(void *CallBackRef, u8 TmrCtrNumber)
+{
+	XTmrCtr *InstancePtr = (XTmrCtr *)CallBackRef;
+
+	/*
+	 * Check if the timer counter has expired, checking is not necessary
+	 * since that's the reason this function is executed, this just shows
+	 * how the callback reference can be used as a pointer to the instance
+	 * of the timer counter that expired, increment a shared variable so
+	 * the main thread of execution can see the timer expired
+	 */
+	if (XTmrCtr_IsExpired(InstancePtr, TmrCtrNumber)) {
+		xil_printf("timer expired cb launched\r\n");
+	}
+}
+/***********************************************
+ * @brief: 		timer test
+ *
+ * @details: 	paste the function into main without any platform init.
+ *
+ * @details:   	extra info:
+ * 					- https://github.com/Xilinx/embeddedsw/blob/master/XilinxProcessorIPLib/drivers/tmrctr/examples/xtmrctr_fast_intr_example.c#L474
+ * 					- #include "xtmrctr.h"
+ * 					- #include "xintc.h"
+ * 					- #include "xinterrupt_wrap.h"
+ ***********************************************/
+void TimerTest_CB(){
+	constexpr u32 TMR_ID 		= XPAR_TMRCTR_1_DEVICE_ID;
+	constexpr u32 TMR_INT_ID 	= XPAR_FABRIC_TMRCTR_1_VEC_ID;
+	constexpr u32 TIMER_CNTR_0  = 0;
+	constexpr u32 RESET_VALUE = 0x5F5E100; //clk frequency in hex
+
+	int Status{0};
+
+	init_platform();
+	print("TESTING TimerTest_CB\n\r");
+
+	// base setup
+
+	Status = XTmrCtr_Initialize(&TmrCtrInstance, TMR_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("timer XTmrCtr_Initialize failed\r\n");
+		}
+
+	Status = XTmrCtr_SelfTest(&TmrCtrInstance, TIMER_CNTR_0);
+	if (Status != XST_SUCCESS) {
+			xil_printf("timer XTmrCtr_SelfTest failed\r\n");
+		}
+
+
+
+	//interrupt system setup
+	IntcConfig = XScuGic_LookupConfig(XPAR_SCUGIC_0_DEVICE_ID);
+		if (NULL == IntcConfig) {
+			xil_printf("timer XScuGic_LookupConfig failed\r\n");
+		}
+
+	Status = XScuGic_CfgInitialize(&IntcInstance, IntcConfig, IntcConfig->CpuBaseAddress);
+	if (Status != XST_SUCCESS) {
+		xil_printf("timer XScuGic_CfgInitialize failed\r\n");
+		}
+	XScuGic_SetPriorityTriggerType(&IntcInstance, TMR_INT_ID, 0xA0, 0x3);
+
+	Status = XScuGic_Connect(&IntcInstance, TMR_INT_ID, (Xil_ExceptionHandler)XTmrCtr_InterruptHandler, &TmrCtrInstance);
+
+	XScuGic_Enable(&IntcInstance, TMR_INT_ID);
+
+	Xil_ExceptionInit();
+
+	Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT, (Xil_ExceptionHandler)XScuGic_InterruptHandler, &IntcInstance);
+
+	Xil_ExceptionEnable();
+
+	// base setup
+	XTmrCtr_SetHandler(&TmrCtrInstance, TimerCounterHandler, &TmrCtrInstance);
+	XTmrCtr_SetOptions(&TmrCtrInstance, TIMER_CNTR_0, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION | XTC_DOWN_COUNT_OPTION);
+	XTmrCtr_SetResetValue(&TmrCtrInstance, TIMER_CNTR_0, RESET_VALUE);
+	XTmrCtr_Start(&TmrCtrInstance,TIMER_CNTR_0);
+
+	while(1){
+
 	}
 
 	cleanup_platform();

@@ -6184,3 +6184,926 @@ TRACE::2025-05-23.19:46:17::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC
 M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2025-05-23.19:46:17::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:39:59::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:39:59::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:39:59::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:39:59::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:39:59::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:39:59::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:39:59::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened new HwDB with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWReader::Active system found as  FullCar_AllFeatures_V0_1
+TRACE::2025-05-23.21:40:01::SCWReader::Handling sysconfig FullCar_AllFeatures_V0_1
+TRACE::2025-05-23.21:40:01::SCWDomain::checking for install qemu data   : 
+TRACE::2025-05-23.21:40:01::SCWDomain:: Using the QEMU Data from install at  : E:/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-05-23.21:40:01::SCWDomain:: Using the QEMU args  from install at  : E:/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-05-23.21:40:01::SCWMssOS::No sw design opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::mss exists loading the mss file  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Opened the sw design from mss  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Adding the swdes entry M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-05-23.21:40:01::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-23.21:40:01::SCWMssOS::Opened the sw design.  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS:: library already available in sw design:  xilffs:5.2
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS:: library already available in sw design:  xilrsa:1.8
+TRACE::2025-05-23.21:40:01::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-23.21:40:01::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-23.21:40:01::SCWMssOS::Commit changes completed.
+TRACE::2025-05-23.21:40:01::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-05-23.21:40:01::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWReader::No isolation master present  
+TRACE::2025-05-23.21:40:01::SCWDomain::checking for install qemu data   : 
+TRACE::2025-05-23.21:40:01::SCWDomain:: Using the QEMU Data from install at  : E:/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-05-23.21:40:01::SCWDomain:: Using the QEMU args  from install at  : E:/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::No sw design opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::mss exists loading the mss file  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Opened the sw design from mss  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Adding the swdes entry M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2025-05-23.21:40:01::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-23.21:40:01::SCWMssOS::Opened the sw design.  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-23.21:40:01::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-23.21:40:01::SCWMssOS::Commit changes completed.
+TRACE::2025-05-23.21:40:01::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-05-23.21:40:01::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWReader::No isolation master present  
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::In reload Mss file.
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::No sw design opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::mss exists loading the mss file  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Opened the sw design from mss  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Adding the swdes entry M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-05-23.21:40:01::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-23.21:40:01::SCWMssOS::Opened the sw design.  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS:: library already available in sw design:  xilffs:5.2
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS:: library already available in sw design:  xilrsa:1.8
+TRACE::2025-05-23.21:40:01::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-23.21:40:01::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-23.21:40:01::SCWMssOS::Commit changes completed.
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:01::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:01::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:01::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:01::SCWMssOS::Removing the swdes entry for  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:02::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:02::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+
+TRACE::2025-05-23.21:40:02::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::In reload Mss file.
+TRACE::2025-05-23.21:40:02::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:02::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:02::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-05-23.21:40:02::SCWMssOS::No sw design opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::mss exists loading the mss file  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::Opened the sw design from mss  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::Adding the swdes entry M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system
+TRACE::2025-05-23.21:40:02::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-23.21:40:02::SCWMssOS::Opened the sw design.  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-23.21:40:02::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-23.21:40:02::SCWMssOS::Commit changes completed.
+TRACE::2025-05-23.21:40:02::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.21:40:02::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.21:40:02::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.21:40:02::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.21:40:02::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.21:40:02::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.21:40:02::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+
+TRACE::2025-05-23.21:40:02::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.21:40:02::SCWMssOS::Removing the swdes entry for  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+LOG::2025-05-23.22:20:33::SCWPlatform::Started generating the artifacts platform FullCar_AllFeatures_V0_1
+TRACE::2025-05-23.22:20:33::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-05-23.22:20:33::SCWPlatform::Started generating the artifacts for system configuration FullCar_AllFeatures_V0_1
+LOG::2025-05-23.22:20:33::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-05-23.22:20:33::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-05-23.22:20:33::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-05-23.22:20:33::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2025-05-23.22:20:33::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2025-05-23.22:20:33::SCWSystem::Not a boot domain 
+LOG::2025-05-23.22:20:33::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2025-05-23.22:20:33::SCWDomain::Generating domain artifcats
+TRACE::2025-05-23.22:20:33::SCWMssOS::Generating standalone artifcats
+TRACE::2025-05-23.22:20:33::SCWMssOS::Copying the qemu file from  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/resources/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu_args.txt To M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/sw/FullCar_AllFeatures_V0_1/qemu/
+TRACE::2025-05-23.22:20:33::SCWMssOS::Copying the qemu file from  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/resources/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu_args.txt To M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/sw/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu/
+TRACE::2025-05-23.22:20:33::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-05-23.22:20:33::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:33::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:33::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:33::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.22:20:33::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:33::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.22:20:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.22:20:33::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.22:20:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.22:20:33::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:33::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-05-23.22:20:33::SCWMssOS::No sw design opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:33::SCWMssOS::mss exists loading the mss file  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:33::SCWMssOS::Opened the sw design from mss  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:33::SCWMssOS::Adding the swdes entry M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system
+TRACE::2025-05-23.22:20:33::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-23.22:20:33::SCWMssOS::Opened the sw design.  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:33::SCWMssOS::Completed writing the mss file at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2025-05-23.22:20:33::SCWMssOS::Mss edits present, copying mssfile into export location M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:33::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-05-23.22:20:33::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-05-23.22:20:33::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2025-05-23.22:20:33::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-05-23.22:20:33::SCWMssOS::Copying to export directory.
+TRACE::2025-05-23.22:20:34::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-05-23.22:20:34::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-05-23.22:20:34::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2025-05-23.22:20:34::SCWSystem::Completed Processing the sysconfig FullCar_AllFeatures_V0_1
+LOG::2025-05-23.22:20:34::SCWPlatform::Completed generating the artifacts for system configuration FullCar_AllFeatures_V0_1
+TRACE::2025-05-23.22:20:34::SCWPlatform::Started preparing the platform 
+TRACE::2025-05-23.22:20:34::SCWSystem::Writing the bif file for system config FullCar_AllFeatures_V0_1
+TRACE::2025-05-23.22:20:34::SCWSystem::dir created 
+TRACE::2025-05-23.22:20:34::SCWSystem::Writing the bif 
+TRACE::2025-05-23.22:20:34::SCWPlatform::Started writing the spfm file 
+TRACE::2025-05-23.22:20:34::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-05-23.22:20:34::SCWPlatform::Completed generating the platform
+TRACE::2025-05-23.22:20:34::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.22:20:34::SCWMssOS::Adding the swdes entry, mss present, able to open swdb M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system_0
+TRACE::2025-05-23.22:20:34::SCWMssOS::Writing the mss file completed M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.22:20:34::SCWMssOS::Commit changes completed.
+TRACE::2025-05-23.22:20:34::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-23.22:20:34::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-23.22:20:34::SCWMssOS::Commit changes completed.
+TRACE::2025-05-23.22:20:34::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.22:20:34::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.22:20:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.22:20:34::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.22:20:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.22:20:34::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.22:20:34::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_0||
+
+TRACE::2025-05-23.22:20:34::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-23.22:20:34::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.22:20:34::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.22:20:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.22:20:34::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.22:20:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.22:20:34::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:34::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_0||
+
+TRACE::2025-05-23.22:20:34::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:34::SCWWriter::formatted JSON is {
+	"platformName":	"FullCar_AllFeatures_V0_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FullCar_AllFeatures_V0_1",
+	"platHandOff":	"M:/projects/clones/SOC/Car_Project/vivado/XSA/FullCar_AllFeatures_V0_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/FullCar_AllFeatures_V0_1.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FullCar_AllFeatures_V0_1",
+	"systems":	[{
+			"systemName":	"FullCar_AllFeatures_V0_1",
+			"systemDesc":	"FullCar_AllFeatures_V0_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FullCar_AllFeatures_V0_1",
+			"sysActiveDom":	"standalone_ps7_cortexa9_0",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"64fce8e86c92608d547c70ee7285b026",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.2", "xilrsa:1.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"9b96d52dca00ece5ea6af278cd8f10e1",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-05-23.22:20:34::SCWPlatform::updated the xpfm file.
+TRACE::2025-05-23.22:20:34::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-23.22:20:34::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-23.22:20:34::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-23.22:20:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper
+TRACE::2025-05-23.22:20:34::SCWPlatform::Opened existing hwdb design_1_wrapper
+TRACE::2025-05-23.22:20:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-23.22:20:34::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-23.22:20:34::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_0||
+
+TRACE::2025-05-23.22:20:34::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:36::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:36::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:36::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:36::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:36::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:36::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:36::SCWPlatform::Do not have an existing db opened. 
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWReader::Active system found as  FullCar_AllFeatures_V0_1
+TRACE::2025-05-24.13:58:38::SCWReader::Handling sysconfig FullCar_AllFeatures_V0_1
+TRACE::2025-05-24.13:58:38::SCWDomain::checking for install qemu data   : 
+TRACE::2025-05-24.13:58:38::SCWDomain:: Using the QEMU Data from install at  : E:/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-05-24.13:58:38::SCWDomain:: Using the QEMU args  from install at  : E:/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2025-05-24.13:58:38::SCWMssOS::No sw design opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::mss exists loading the mss file  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::Opened the sw design from mss  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::Adding the swdes entry M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-05-24.13:58:38::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-24.13:58:38::SCWMssOS::Opened the sw design.  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:38::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS:: library already available in sw design:  xilffs:5.2
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:38::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS:: library already available in sw design:  xilrsa:1.8
+TRACE::2025-05-24.13:58:38::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-24.13:58:38::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-24.13:58:38::SCWMssOS::Commit changes completed.
+TRACE::2025-05-24.13:58:38::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-05-24.13:58:38::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:38::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWReader::No isolation master present  
+TRACE::2025-05-24.13:58:38::SCWDomain::checking for install qemu data   : 
+TRACE::2025-05-24.13:58:38::SCWDomain:: Using the QEMU Data from install at  : E:/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/
+TRACE::2025-05-24.13:58:38::SCWDomain:: Using the QEMU args  from install at  : E:/Vitis/2024.1/data/emulation/platforms/zynq/sw/a9_standalone/qemu/qemu_args.txt
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:38::SCWMssOS::No sw design opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::mss exists loading the mss file  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::Opened the sw design from mss  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::Adding the swdes entry M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss with des name system_0
+TRACE::2025-05-24.13:58:38::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-24.13:58:38::SCWMssOS::Opened the sw design.  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-24.13:58:38::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-24.13:58:38::SCWMssOS::Commit changes completed.
+TRACE::2025-05-24.13:58:38::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2025-05-24.13:58:38::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:38::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:38::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:38::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:38::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.13:58:38::SCWReader::No isolation master present  
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:51::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:51::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::In reload Mss file.
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:51::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+
+TRACE::2025-05-24.13:58:51::SCWMssOS::No sw design opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::mss exists loading the mss file  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::Opened the sw design from mss  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::Adding the swdes entry M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-05-24.13:58:51::SCWMssOS::updating the scw layer about changes
+TRACE::2025-05-24.13:58:51::SCWMssOS::Opened the sw design.  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:51::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:51::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS:: library already available in sw design:  xilffs:5.2
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:51::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:51::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS:: library already available in sw design:  xilrsa:1.8
+TRACE::2025-05-24.13:58:51::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-24.13:58:51::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-24.13:58:51::SCWMssOS::Commit changes completed.
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.13:58:51::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.13:58:51::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.13:58:51::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.13:58:51::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.13:58:51::SCWMssOS::Removing the swdes entry for  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+LOG::2025-05-24.17:08:00::SCWPlatform::Started generating the artifacts platform FullCar_AllFeatures_V0_1
+TRACE::2025-05-24.17:08:00::SCWPlatform::Sanity checking of platform is completed
+LOG::2025-05-24.17:08:00::SCWPlatform::Started generating the artifacts for system configuration FullCar_AllFeatures_V0_1
+LOG::2025-05-24.17:08:00::SCWSystem::Checking the domain zynq_fsbl
+LOG::2025-05-24.17:08:00::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2025-05-24.17:08:00::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2025-05-24.17:08:00::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2025-05-24.17:08:00::SCWSystem::Checking the domain standalone_ps7_cortexa9_0
+LOG::2025-05-24.17:08:00::SCWSystem::Not a boot domain 
+LOG::2025-05-24.17:08:00::SCWSystem::Started Processing the domain standalone_ps7_cortexa9_0
+TRACE::2025-05-24.17:08:00::SCWDomain::Generating domain artifcats
+TRACE::2025-05-24.17:08:00::SCWMssOS::Generating standalone artifcats
+TRACE::2025-05-24.17:08:00::SCWMssOS::Copying the qemu file from  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/resources/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu_args.txt To M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/sw/FullCar_AllFeatures_V0_1/qemu/
+TRACE::2025-05-24.17:08:00::SCWMssOS::Copying the qemu file from  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/resources/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu_args.txt To M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/sw/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu/
+TRACE::2025-05-24.17:08:00::SCWMssOS:: Copying the user libraries. 
+TRACE::2025-05-24.17:08:00::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.17:08:00::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.17:08:00::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+
+TRACE::2025-05-24.17:08:00::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::Completed writing the mss file at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp
+TRACE::2025-05-24.17:08:00::SCWMssOS::Mss edits present, copying mssfile into export location M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2025-05-24.17:08:00::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2025-05-24.17:08:00::SCWDomain::Skipping the build for domain :  standalone_ps7_cortexa9_0
+TRACE::2025-05-24.17:08:00::SCWMssOS::skipping the bsp build ... 
+TRACE::2025-05-24.17:08:00::SCWMssOS::Copying to export directory.
+TRACE::2025-05-24.17:08:00::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2025-05-24.17:08:00::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2025-05-24.17:08:00::SCWSystem::Completed Processing the domain standalone_ps7_cortexa9_0
+LOG::2025-05-24.17:08:00::SCWSystem::Completed Processing the sysconfig FullCar_AllFeatures_V0_1
+LOG::2025-05-24.17:08:00::SCWPlatform::Completed generating the artifacts for system configuration FullCar_AllFeatures_V0_1
+TRACE::2025-05-24.17:08:00::SCWPlatform::Started preparing the platform 
+TRACE::2025-05-24.17:08:00::SCWSystem::Writing the bif file for system config FullCar_AllFeatures_V0_1
+TRACE::2025-05-24.17:08:00::SCWSystem::dir created 
+TRACE::2025-05-24.17:08:00::SCWSystem::Writing the bif 
+TRACE::2025-05-24.17:08:00::SCWPlatform::Started writing the spfm file 
+TRACE::2025-05-24.17:08:00::SCWPlatform::Started writing the xpfm file 
+TRACE::2025-05-24.17:08:00::SCWPlatform::Completed generating the platform
+TRACE::2025-05-24.17:08:00::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::Adding the swdes entry, mss present, able to open swdb M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2025-05-24.17:08:00::SCWMssOS::Writing the mss file completed M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::Commit changes completed.
+TRACE::2025-05-24.17:08:00::SCWMssOS::Saving the mss changes M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2025-05-24.17:08:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2025-05-24.17:08:00::SCWMssOS::Commit changes completed.
+TRACE::2025-05-24.17:08:00::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.17:08:00::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.17:08:00::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.17:08:00::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.17:08:00::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.17:08:00::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.17:08:00::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWWriter::formatted JSON is {
+	"platformName":	"FullCar_AllFeatures_V0_1",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"FullCar_AllFeatures_V0_1",
+	"platHandOff":	"M:/projects/clones/SOC/Car_Project/vivado/XSA/FullCar_AllFeatures_V0_1.xsa",
+	"platIntHandOff":	"<platformDir>/hw/FullCar_AllFeatures_V0_1.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"FullCar_AllFeatures_V0_1",
+	"systems":	[{
+			"systemName":	"FullCar_AllFeatures_V0_1",
+			"systemDesc":	"FullCar_AllFeatures_V0_1",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"FullCar_AllFeatures_V0_1",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"standalone_ps7_cortexa9_0",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"64fce8e86c92608d547c70ee7285b026",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.2", "xilrsa:1.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_ps7_cortexa9_0",
+					"domainDispName":	"standalone_ps7_cortexa9_0",
+					"domainDesc":	"standalone_ps7_cortexa9_0",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/FullCar_AllFeatures_V0_1/standalone_ps7_cortexa9_0/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.1",
+					"mssFile":	"",
+					"md5Digest":	"9b96d52dca00ece5ea6af278cd8f10e1",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"32-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2025-05-24.17:08:00::SCWPlatform::updated the xpfm file.
+TRACE::2025-05-24.17:08:00::SCWPlatform::Trying to open the hw design at M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA given M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA absoulate path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform::DSA directory M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw
+TRACE::2025-05-24.17:08:00::SCWPlatform:: Platform Path M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa
+TRACE::2025-05-24.17:08:00::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2025-05-24.17:08:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2025-05-24.17:08:00::SCWMssOS::Checking the sw design at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss
+TRACE::2025-05-24.17:08:00::SCWMssOS::DEBUG:  swdes dump  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss|system_0||
+M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2025-05-24.17:08:00::SCWMssOS::Sw design exists and opened at  M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/ps7_cortexa9_0/standalone_ps7_cortexa9_0/bsp/system.mss

@@ -26,3 +26,12 @@ platform generate
 domain active {zynq_fsbl}
 bsp reload
 platform generate -domains 
+platform active {FullCar_AllFeatures_V0_1}
+bsp reload
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+platform generate -domains 
+platform active {FullCar_AllFeatures_V0_1}
+domain active {zynq_fsbl}
+bsp reload
+platform generate -domains 
