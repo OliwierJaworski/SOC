@@ -9,12 +9,16 @@
 #include "xtmrctr.h"
 #include "xinterrupt_wrap.h"
 #include "xscugic.h"
+#include "xiic_i.h"
 
 #define GPIO_DEVICE_ID      XPAR_GPIO_0_DEVICE_ID
 #define INTC_DEVICE_ID      XPAR_SCUGIC_0_DEVICE_ID
 #define GPIO_INTERRUPT_ID   XPAR_FABRIC_GPIO_0_VEC_ID
 #define SWITCH_CHANNEL 1
 #define BUTTON_CHANNEL 2
+
+#define INTC_DEVICE_ID_IIC 	XPAR_SCUGIC_SINGLE_DEVICE_ID
+#define INTC_HANDLER	XScuGic_InterruptHandler
 
 /***********************************************
  * @author:		Runar Jans
@@ -117,5 +121,51 @@ public:
 private:
 	ULTRASONE_X(){};
 	uint32_t reg_value_uss0{0}, reg_value_uss1{0};
+};
+
+/***********************************************
+ * @author:		Oliwier Jaworski
+ * @brief: 		singleton class IIC
+ *
+ * @details:   	extra info:
+ ***********************************************/
+class IIC{
+public:
+	void scanbus();
+	XIic* GetXIic(){return &Iic;};
+
+	static IIC& instance(){static IIC IIC_inst; return IIC_inst;}
+private:
+	IIC();
+
+	XIic Iic;
+	XIic_Config *ConfigPtr;
+	static constexpr u32 IIC_DEVICE_ID{XPAR_IIC_0_DEVICE_ID};
+	static constexpr u32 IIC_INTR_ID{XPAR_FABRIC_IIC_0_VEC_ID};
+};
+
+/***********************************************
+ * @author:		Oliwier Jaworski
+ * @brief: 		singleton class IMU connected to I2C pins
+ *
+ * @details:   	extra info:
+ * 					- SCL = Y18
+ * 					- SDA = Y19
+ ***********************************************/
+class MP6050 {
+public:
+	void MPU6050Calibration(){}; //needs implementation
+	int MPU6050ReadAll();
+	IIC I2c_inst{IIC::instance()};
+	static MP6050& instance(){static MP6050 Imu; return Imu;}
+private:
+	MP6050();
+
+	int16_t AcX, AcY{0}, AcZ{0}, Temp{0}, GyX{0}, GyY{0}, GyZ{0};
+	int16_t AcX_cal{0}, AcY_cal{0}, AcZ_cal{0}, Temp_cal{0}, GyX_cal{0}, GyY_cal{0}, GyZ_cal{0};
+
+	static constexpr u32 MP6050_ADDR{0x68};
+	static constexpr u32 MPU6050_PWR_MGMT_1{0x6B};
+	static constexpr u32 MPU6050_ACCEL_XOUT_H{0x3B};
 };
 #endif

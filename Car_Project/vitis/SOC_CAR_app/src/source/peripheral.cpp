@@ -10,6 +10,14 @@ constexpr u32 	TIMER_1_::TMR_INT_ID;
 constexpr u32 	TIMER_1_::TIMER_CNTR_0;
 constexpr u32 	TIMER_1_::RESET_VALUE;
 
+constexpr u32 MP6050::MP6050_ADDR;
+constexpr u32 MP6050::MPU6050_PWR_MGMT_1;
+constexpr u32 MP6050::MPU6050_ACCEL_XOUT_H;
+
+constexpr u32 IIC::IIC_DEVICE_ID;
+constexpr u32 IIC::IIC_INTR_ID;
+
+
 // ------------------- Class constructors -------------------
 BUTTONS::BUTTONS(){
 
@@ -46,6 +54,30 @@ TIMER_1_::TIMER_1_(){
 	XTmrCtr_SetResetValue(&TmrCtrInstance, TIMER_CNTR_0, RESET_VALUE);
 	XTmrCtr_Start(&TmrCtrInstance,TIMER_CNTR_0);
 }
+
+IIC::IIC(){
+	int Status = XST_FAILURE;
+	ConfigPtr = XIic_LookupConfig(IIC_DEVICE_ID);
+	if (ConfigPtr == NULL) {
+		xil_printf("IIC XIic_LookupConfig failed\r\n");
+		}
+	Status = XIic_CfgInitialize(&Iic, ConfigPtr, ConfigPtr->BaseAddress);
+	if (Status != XST_SUCCESS) {
+		xil_printf("IIC XIic_CfgInitialize failed\r\n");
+		}
+	XIic_Start(&Iic);
+}
+
+MP6050::MP6050(){
+	int Status;
+	XIic* Iic = I2c_inst.GetXIic();
+	XIic_SetAddress(Iic, XII_ADDR_TO_SEND_TYPE, MP6050_ADDR);
+	u8 initData[2] = {MPU6050_PWR_MGMT_1, 0x00};
+	Status = XIic_Send(Iic->BaseAddress, MP6050_ADDR, initData, 2, XIIC_STOP);
+	if (Status != XST_SUCCESS) {
+		xil_printf("MP6050::XIic_Send failed\r\n");
+		}
+};
 
 // ------------------- Interrupt Callbacks -------------------
 void
@@ -172,4 +204,53 @@ ULTRASONE_X::GetDistance(u8 deviceSelect){
 	}
 	return -1;
 }
+void
+IIC::scanbus(){
+	xil_printf("Scanning I2C bus...\r\n");
 
+	u8 dummy = 0x00;
+	int found = 0;
+
+	 for (u8 addr = 0x03; addr <= 0x77; ++addr) {
+		 int Status = XIic_Send(Iic.BaseAddress, addr, &dummy, 1, XIIC_STOP);
+
+	    if (Status == 1) {
+	    	xil_printf("Device found at 0x%02X\r\n", addr);
+	    	found++;
+	        }
+	    }
+	    if (!found) xil_printf("No I2C devices found.\r\n");
+	    else xil_printf("Scan complete. %d device(s) found.\r\n", found);
+}
+int
+MP6050::MPU6050ReadAll(){
+	XIic* Iic = I2c_inst.GetXIic();
+	u8 reg = MPU6050_ACCEL_XOUT_H;
+	u8 data[14];
+	int Status;
+
+	    Status = XIic_Send(Iic->BaseAddress, MP6050_ADDR, &reg, 1, XIIC_REPEATED_START);
+	    if (Status != 1) return XST_FAILURE;
+
+	    Status = XIic_Recv(Iic->BaseAddress, MP6050_ADDR, data, 14, XIIC_STOP);
+	    if (Status != 14) return XST_FAILURE;
+
+	    AcX = (data[0] << 8) | data[1];
+	    AcY = (data[2] << 8) | data[3];
+	    AcZ = (data[4] << 8) | data[5];
+	    Temp = (data[6] << 8) | data[7];
+	    GyX = (data[8] << 8) | data[9];
+	    GyY = (data[10] << 8) | data[11];
+	    GyZ = (data[12] << 8) | data[13];
+
+	    xil_printf("Raw Data:\r\n");
+	    xil_printf("ACCEL_X: %d\r\n", (data[0] << 8) | data[1]);
+	    xil_printf("ACCEL_Y: %d\r\n", (data[2] << 8) | data[3]);
+	    xil_printf("ACCEL_Z: %d\r\n", (data[4] << 8) | data[5]);
+	    xil_printf("TEMP   : %d\r\n", (data[6] << 8) | data[7]);
+	    xil_printf("GYRO_X : %d\r\n", (data[8] << 8) | data[9]);
+	    xil_printf("GYRO_Y : %d\r\n", (data[10] << 8) | data[11]);
+	    xil_printf("GYRO_Z : %d\r\n", (data[12] << 8) | data[13]);
+
+	    return XST_SUCCESS;
+}

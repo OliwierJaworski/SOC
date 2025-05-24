@@ -5,15 +5,11 @@
 
 int main()
 {
-	ULTRASONE_X& sw{ ULTRASONE_X::instance() };
-	s16 value0 = sw.GetDistance(0);
-	s16 value1 = sw.GetDistance(1);
-
+	MP6050& mp{MP6050::instance()};
+	mp.I2c_inst.scanbus();
+	mp.MPU6050ReadAll();
 	while(1){
-		value0 = sw.GetDistance(0);
-		value1 = sw.GetDistance(1);
 
-		xil_printf("USS0 = %d, USS1 = %d\r\n",value0, value1);
 		usleep(500000); // 0.5s delay
 	}
     return 0;
