@@ -38,7 +38,7 @@
 class BUTTONS {
 public:
 	int GetStatus(){return Status;}
-	static const BUTTONS& instance(){static const BUTTONS BTNS; return BTNS;}
+	static BUTTONS& instance(){static BUTTONS BTNS; return BTNS;}
 private:
 	BUTTONS();
 	static void ButtonIsr(void *CallbackRef);
@@ -62,12 +62,13 @@ private:
 class SWITCHES {
 public:
 	int GetStatus(){return Status;}
-	static const SWITCHES& instance(){static const SWITCHES SWS; return SWS;}
+	u8 Getstate() {return state;}
+	static SWITCHES& instance(){static SWITCHES SWS; return SWS;}
 private:
 	SWITCHES();
 	static void ButtonIsr(void *CallbackRef);
 	int ISR_setup();
-
+	static u8 state;
 	int 			Status;
 	static XGpio 	GpioSws;
 	static XScuGic 	Intc;
@@ -87,7 +88,7 @@ private:
 class TIMER_1_ {
 public:
 	int GetStatus(){return Status;}
-	static const TIMER_1_& instance(){static const TIMER_1_ TS; return TS;}
+	static TIMER_1_& instance(){static TIMER_1_ TS; return TS;}
 private:
 	TIMER_1_();
 	static void Timer_1_Isr(void *CallBackRef, u8 TmrCtrNumber);
@@ -111,9 +112,11 @@ private:
  * @details:   	extra info:
  * 					- Timer for motor pwm
  * 					- #include "xtmrctr.h"
+ * 					- MAX Hightime = PERIOD-10 (anything above will not work )
  ***********************************************/
 class TIMER_PWM_ {
 public:
+
 	u8 GetDutyCycle(){return DutyCycle;}
 	int GetStatus(){return Status;}
 	u8 PwmAdjust(u32 period, u32 hightime);
@@ -126,7 +129,9 @@ private:
 	u8  DutyCycle;
 	static constexpr u32 TMR_DEVICE_ID{XPAR_AXI_TIMER_0_DEVICE_ID};
 	static constexpr u32 PERIOD{100000000};
-	static constexpr u32 HIGHTIME{PERIOD/2};
+	static constexpr u32 HIGHTIME{PERIOD-10};
+	static constexpr u32 MAX_HIGHTIME{PERIOD-10};
+
 };
 
 /***********************************************
@@ -196,7 +201,7 @@ private:
 class SPEEDSENSORS {
 public:
 	s32 GetRawSpeedFromSensor(u8 deviceSelect);
-	static const SPEEDSENSORS& instance(){static const SPEEDSENSORS SPS; return SPS;}
+	static SPEEDSENSORS& instance(){static SPEEDSENSORS SPS; return SPS;}
 private:
 	SPEEDSENSORS();
 };

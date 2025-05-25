@@ -4,6 +4,7 @@ XGpio BUTTONS::GpioBtn;
 XScuGic BUTTONS::Intc;
 XGpio SWITCHES::GpioSws;
 XScuGic SWITCHES::Intc;
+u8 SWITCHES::state;
 
 constexpr u32 	TIMER_1_::TMR_ID;
 constexpr u32 	TIMER_1_::TMR_INT_ID;
@@ -20,6 +21,7 @@ constexpr u32 IIC::IIC_INTR_ID;
 constexpr u32 TIMER_PWM_::TMR_DEVICE_ID;
 constexpr u32 TIMER_PWM_::PERIOD;
 constexpr u32 TIMER_PWM_::HIGHTIME;
+constexpr u32 TIMER_PWM_::MAX_HIGHTIME;
 
 // ------------------- Class constructors -------------------
 BUTTONS::BUTTONS(){
@@ -110,7 +112,7 @@ void
 SWITCHES::ButtonIsr(void *CallbackRef){
 	u32 sws_val = XGpio_DiscreteRead(&GpioSws, SWITCH_CHANNEL);
 	xil_printf("Interrupt: switch state = %u\r\n", sws_val);
-
+	state = sws_val;
 	// Clear interrupt
 	XGpio_InterruptClear(&GpioSws, XGPIO_IR_CH1_MASK);
 }
