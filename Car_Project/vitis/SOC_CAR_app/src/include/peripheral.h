@@ -15,6 +15,8 @@
 #include "ultrasoneIP.h"
 #include "Motor_DriverIP.h"
 
+#define __CLEAR_SCREEN__ xil_printf("\x1B[2J\x1B[H\n");
+
 #define GPIO_DEVICE_ID      XPAR_GPIO_0_DEVICE_ID
 #define INTC_DEVICE_ID      XPAR_SCUGIC_0_DEVICE_ID
 #define GPIO_INTERRUPT_ID   XPAR_FABRIC_GPIO_0_VEC_ID
@@ -201,6 +203,7 @@ private:
 class SPEEDSENSORS {
 public:
 	s32 GetRawSpeedFromSensor(u8 deviceSelect);
+	s32 GetRpm(u8 deviceSelect);
 	static SPEEDSENSORS& instance(){static SPEEDSENSORS SPS; return SPS;}
 private:
 	SPEEDSENSORS();
@@ -237,16 +240,18 @@ private:
  ***********************************************/
 class MP6050 {
 public:
-	void MPU6050Calibration(){}; //needs implementation
+	void MPU6050Calibration(); //needs implementation
 	int MPU6050ReadAll();
 	IIC I2c_inst{IIC::instance()};
-	static MP6050& instance(){static MP6050 Imu; return Imu;}
-private:
-	MP6050();
 
 	int16_t AcX, AcY{0}, AcZ{0}, Temp{0}, GyX{0}, GyY{0}, GyZ{0};
 	int16_t AcX_cal{0}, AcY_cal{0}, AcZ_cal{0}, Temp_cal{0}, GyX_cal{0}, GyY_cal{0}, GyZ_cal{0};
 
+	static MP6050& instance(){static MP6050 Imu; return Imu;}
+private:
+	MP6050();
+
+	bool IsCalibrated{false};
 	static constexpr u32 MP6050_ADDR{0x68};
 	static constexpr u32 MPU6050_PWR_MGMT_1{0x6B};
 	static constexpr u32 MPU6050_ACCEL_XOUT_H{0x3B};

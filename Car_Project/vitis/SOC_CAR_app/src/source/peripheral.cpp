@@ -279,22 +279,69 @@ MP6050::MPU6050ReadAll(){
 	    Status = XIic_Recv(Iic->BaseAddress, MP6050_ADDR, data, 14, XIIC_STOP);
 	    if (Status != 14) return XST_FAILURE;
 
-	    AcX = (data[0] << 8) | data[1];
-	    AcY = (data[2] << 8) | data[3];
-	    AcZ = (data[4] << 8) | data[5];
-	    Temp = (data[6] << 8) | data[7];
-	    GyX = (data[8] << 8) | data[9];
-	    GyY = (data[10] << 8) | data[11];
-	    GyZ = (data[12] << 8) | data[13];
+	    	AcX = (data[0] << 8) | data[1];
+	    	AcY = (data[2] << 8) | data[3];
+	    	AcZ = (data[4] << 8) | data[5];
+	    	Temp = (data[6] << 8) | data[7];
+	    	GyX = (data[8] << 8) | data[9];
+	    	GyY = (data[10] << 8) | data[11];
+	    	GyZ = (data[12] << 8) | data[13];
 
-	    xil_printf("Raw Data:\r\n");
-	    xil_printf("ACCEL_X: %d\r\n", (data[0] << 8) | data[1]);
-	    xil_printf("ACCEL_Y: %d\r\n", (data[2] << 8) | data[3]);
-	    xil_printf("ACCEL_Z: %d\r\n", (data[4] << 8) | data[5]);
-	    xil_printf("TEMP   : %d\r\n", (data[6] << 8) | data[7]);
-	    xil_printf("GYRO_X : %d\r\n", (data[8] << 8) | data[9]);
-	    xil_printf("GYRO_Y : %d\r\n", (data[10] << 8) | data[11]);
-	    xil_printf("GYRO_Z : %d\r\n", (data[12] << 8) | data[13]);
+	    	float temp_c;
+	    	if(IsCalibrated){
+	    		temp_c = Temp / 340.0 + 36.53;
+	    		AcX = AcX - AcX_cal;
+	    		AcY = AcY - AcY_cal;
+	    		AcZ = AcZ - AcZ_cal;
+	    		Temp = (int)((temp_c - (int)temp_c) * 100);
+	    		GyX = GyX - GyX_cal;
+	    		GyY = GyY - GyY_cal;
+	    		GyZ = GyZ - GyZ_cal;
 
+	    		/*__CLEAR_SCREEN__
+	    		xil_printf("ACCEL_X: %d\r\n", AcX);
+	    		xil_printf("ACCEL_Y: %d\r\n", AcY);
+	    		xil_printf("ACCEL_Z: %d\r\n", AcZ);
+	    		xil_printf("TEMP   : %d\r\n", Temp);
+	    		xil_printf("GYRO_X : %d\r\n", GyX);
+	    		xil_printf("GYRO_Y : %d\r\n", GyY);
+	    		xil_printf("GYRO_Z : %d\r\n", GyZ);
+	    		*/
+	    	}
 	    return XST_SUCCESS;
 }
+
+void
+MP6050::MPU6050Calibration(){
+	int32_t sum_AcX = 0, sum_AcY = 0, sum_AcZ = 0;
+		int32_t sum_GyX = 0, sum_GyY = 0, sum_GyZ = 0;
+
+		xil_printf("[ Calibrating MPU6050... Hold device still ]\r\n");
+
+		for (int i = 0; i < 20; ++i) {
+			if (MPU6050ReadAll() != XST_SUCCESS) {
+				xil_printf("[ERROR] Failed to read during calibration.\r\n");
+				continue;
+			}
+			sum_AcX += AcX;
+			sum_AcY += AcY;
+			sum_AcZ += AcZ;
+			sum_GyX += GyX;
+			sum_GyY += GyY;
+			sum_GyZ += GyZ;
+			usleep(50000);
+		}
+
+		AcX_cal = sum_AcX / 20;
+		AcY_cal = sum_AcY / 20;
+		AcZ_cal = sum_AcZ / 20;
+		GyX_cal = sum_GyX / 20;
+		GyY_cal = sum_GyY / 20;
+		GyZ_cal = sum_GyZ / 20;
+
+		xil_printf("[Calibration complete]\r\n");
+		xil_printf("Accel cal: X=%d Y=%d Z=%d\r\n", AcX_cal, AcY_cal, AcZ_cal);
+		xil_printf("Gyro  cal: X=%d Y=%d Z=%d\r\n", GyX_cal, GyY_cal, GyZ_cal);
+		IsCalibrated = true;
+}
+

@@ -8,6 +8,7 @@ int main()
 	init_platform();
 	CarManager& CM{CarManager::instance()};
 	CM.Drive();
+
     return 0;
 }
 
