@@ -35,3 +35,5 @@ platform active {FullCar_AllFeatures_V0_1}
 domain active {zynq_fsbl}
 bsp reload
 platform generate -domains 
+platform clean
+platform generate

@@ -13,6 +13,7 @@
 
 #include "SpeedSensor_Driver_IP.h"
 #include "ultrasoneIP.h"
+#include "Motor_DriverIP.h"
 
 #define GPIO_DEVICE_ID      XPAR_GPIO_0_DEVICE_ID
 #define INTC_DEVICE_ID      XPAR_SCUGIC_0_DEVICE_ID
@@ -116,7 +117,7 @@ public:
 	u8 GetDutyCycle(){return DutyCycle;}
 	int GetStatus(){return Status;}
 	u8 PwmAdjust(u32 period, u32 hightime);
-	static const TIMER_PWM_& instance(){static const TIMER_PWM_ pwm; return pwm;}
+	static TIMER_PWM_& instance(){static TIMER_PWM_ pwm; return pwm;}
 private:
 	TIMER_PWM_();
 
@@ -124,8 +125,43 @@ private:
 	int Status{0};
 	u8  DutyCycle;
 	static constexpr u32 TMR_DEVICE_ID{XPAR_AXI_TIMER_0_DEVICE_ID};
-	static constexpr u32 PERIOD{500000};
-	static constexpr u32 HIGHTIME{PERIOD / 2};
+	static constexpr u32 PERIOD{100000000};
+	static constexpr u32 HIGHTIME{PERIOD/2};
+};
+
+/***********************************************
+ * @author:		Mauro Debruyn
+ * @brief: 		singleton MOTOR_DRIVER class
+ *
+ * @details:   	extra info:
+ * 				 - class which controls the motordriver using mux
+ * 				 - how to connect
+ * 				 	-> MLeft_Forward 	= W14
+ * 				 	-> MRight_Forward 	= Y14
+ * 				 	-> MLeft_Backwards 	= T11
+ * 				 	-> MRight_Backwards = T10
+ ***********************************************/
+class MOTOR_DRIVER {
+public:
+	enum MOTOR_SELECT{
+		Motors_off = 0,
+		MLeft_Forward,
+		MRight_Forward, //m2 forward
+		MLeft_Backwards,
+		MRight_Backwards,
+		Both_Forward,
+		Both_Backwards=7
+	};
+	u8 SetPwm(u32 period, u32 hightime){ return pwm.PwmAdjust(period, hightime); }
+	u8 GetDutyCycle(){ return pwm.GetDutyCycle(); }
+	void MotorSelect(MOTOR_SELECT sl){ MOTOR_DRIVERIP_mWriteReg(	XPAR_MOTOR_DRIVERIP_0_S00_AXI_BASEADDR,
+		    												 		MOTOR_DRIVERIP_S00_AXI_SLV_REG0_OFFSET, sl);}
+	u32 GetMotorSelect(){return MOTOR_DRIVERIP_mReadReg(XPAR_MOTOR_DRIVERIP_0_S00_AXI_BASEADDR, MOTOR_DRIVERIP_S00_AXI_SLV_REG0_OFFSET);}
+
+	static MOTOR_DRIVER& instance(){static MOTOR_DRIVER MD; return MD;}
+private:
+	MOTOR_DRIVER(){};
+	TIMER_PWM_& pwm{TIMER_PWM_::instance()};
 };
 
 /***********************************************
@@ -153,15 +189,13 @@ private:
 
 /***********************************************
  * @author:		Mauro Debruyn
- * @brief: 		singleton class controlling timer_0
+ * @brief: 		singleton class for reading speedsensor data
  *
  * @details:   	extra info:
- * 					- Timer for motor pwm
- * 					- #include "xtmrctr.h"
  ***********************************************/
 class SPEEDSENSORS {
 public:
-	s32 GetRawSpeedFromSensor(u8 whichSensor);
+	s32 GetRawSpeedFromSensor(u8 deviceSelect);
 	static const SPEEDSENSORS& instance(){static const SPEEDSENSORS SPS; return SPS;}
 private:
 	SPEEDSENSORS();

@@ -253,12 +253,12 @@ TIMER_PWM_::PwmAdjust(u32 period, u32 hightime){
 }
 
 s32
-SPEEDSENSORS::GetRawSpeedFromSensor(u8 whichSensor){
-	if (whichSensor > 1 || whichSensor < 0) return -1;
-	if(whichSensor == 1)
+SPEEDSENSORS::GetRawSpeedFromSensor(u8 deviceSelect){
+	if (deviceSelect > 1 || deviceSelect < 0) return -1;
+	if(deviceSelect == 1)
 		return SPEEDSENSOR_DRIVER_IP_mReadReg(	XPAR_SPEEDSENSOR_DRIVER_IP_1_S00_AXI_BASEADDR,
 												SPEEDSENSOR_DRIVER_IP_S00_AXI_SLV_REG0_OFFSET);
-	if(whichSensor == 0)
+	if(deviceSelect == 0)
 	return SPEEDSENSOR_DRIVER_IP_mReadReg(	XPAR_SPEEDSENSOR_DRIVER_IP_0_S00_AXI_BASEADDR,
 												SPEEDSENSOR_DRIVER_IP_S00_AXI_SLV_REG0_OFFSET);
 	return -1;
