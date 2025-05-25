@@ -45,4 +45,4 @@ This subfolder contains…
 
 ### Contents
 https://github.com/OliwierJaworski/SOC/blob/main/Car_Project/README.md
-- [PDF Block Design](example)
+- [PDF Block Design](blokdesign_car.pdf)
