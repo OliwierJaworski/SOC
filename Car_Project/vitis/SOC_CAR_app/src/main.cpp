@@ -3,14 +3,17 @@
 #include "examples.hpp"
 #include "peripheral.h"
 
+
 int main()
 {
-	MP6050& mp{MP6050::instance()};
-	mp.I2c_inst.scanbus();
-	mp.MPU6050ReadAll();
+	//MP6050& mp{MP6050::instance()};
+	//mp.I2c_inst.scanbus();
+	//mp.MPU6050ReadAll();
+	uint32_t read_speed = SPEEDSENSOR_DRIVER_IP_mReadReg(XPAR_SPEEDSENSOR_DRIVER_IP_1_S00_AXI_BASEADDR, SPEEDSENSOR_DRIVER_IP_S00_AXI_SLV_REG0_OFFSET);
 	while(1){
-
+		read_speed = SPEEDSENSOR_DRIVER_IP_mReadReg(XPAR_SPEEDSENSOR_DRIVER_IP_1_S00_AXI_BASEADDR, SPEEDSENSOR_DRIVER_IP_S00_AXI_SLV_REG0_OFFSET);
 		usleep(500000); // 0.5s delay
 	}
     return 0;
 }
+

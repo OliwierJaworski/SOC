@@ -17,6 +17,9 @@ constexpr u32 MP6050::MPU6050_ACCEL_XOUT_H;
 constexpr u32 IIC::IIC_DEVICE_ID;
 constexpr u32 IIC::IIC_INTR_ID;
 
+constexpr u32 TIMER_PWM_::TMR_DEVICE_ID;
+constexpr u32 TIMER_PWM_::PERIOD;
+constexpr u32 TIMER_PWM_::HIGHTIME;
 
 // ------------------- Class constructors -------------------
 BUTTONS::BUTTONS(){
@@ -53,6 +56,20 @@ TIMER_1_::TIMER_1_(){
 	XTmrCtr_SetOptions(&TmrCtrInstance, TIMER_CNTR_0, XTC_INT_MODE_OPTION | XTC_AUTO_RELOAD_OPTION | XTC_DOWN_COUNT_OPTION);
 	XTmrCtr_SetResetValue(&TmrCtrInstance, TIMER_CNTR_0, RESET_VALUE);
 	XTmrCtr_Start(&TmrCtrInstance,TIMER_CNTR_0);
+}
+TIMER_PWM_::TIMER_PWM_(){
+	Status = XTmrCtr_Initialize(&TMRInst, TMR_DEVICE_ID);
+	if(Status != XST_SUCCESS){
+		xil_printf("failed to initialize TMRCTR_0 instance\n\r");
+		}
+	Status = XTmrCtr_SelfTest(&TMRInst, 0); //TMRCTR_0
+	if (Status != XST_SUCCESS) {
+		xil_printf("Self-test of TMRCTR_0 failed\n\r");
+		}
+	XTmrCtr_SetOptions(&TMRInst, 0, XTC_INT_MODE_OPTION); //TMRCTR_0
+	XTmrCtr_SetOptions(&TMRInst, 1, XTC_INT_MODE_OPTION); //TMRCTR_1
+
+	PwmAdjust(PERIOD, HIGHTIME);
 }
 
 IIC::IIC(){
@@ -222,6 +239,31 @@ IIC::scanbus(){
 	    if (!found) xil_printf("No I2C devices found.\r\n");
 	    else xil_printf("Scan complete. %d device(s) found.\r\n", found);
 }
+
+u8
+TIMER_PWM_::PwmAdjust(u32 period, u32 hightime){
+	XTmrCtr_PwmDisable(&TMRInst);
+	DutyCycle = XTmrCtr_PwmConfigure(&TMRInst, period, hightime);
+	if (Status != XST_SUCCESS) {
+		xil_printf("TmrCtrSetupIntrSystem failed\n\r");
+		}
+	xil_printf("PWM Configured for Duty Cycle = %d\r\n", DutyCycle);
+	XTmrCtr_PwmEnable(&TMRInst);
+	return DutyCycle;
+}
+
+s32
+SPEEDSENSORS::GetRawSpeedFromSensor(u8 whichSensor){
+	if (whichSensor > 1 || whichSensor < 0) return -1;
+	if(whichSensor == 1)
+		return SPEEDSENSOR_DRIVER_IP_mReadReg(	XPAR_SPEEDSENSOR_DRIVER_IP_1_S00_AXI_BASEADDR,
+												SPEEDSENSOR_DRIVER_IP_S00_AXI_SLV_REG0_OFFSET);
+	if(whichSensor == 0)
+	return SPEEDSENSOR_DRIVER_IP_mReadReg(	XPAR_SPEEDSENSOR_DRIVER_IP_0_S00_AXI_BASEADDR,
+												SPEEDSENSOR_DRIVER_IP_S00_AXI_SLV_REG0_OFFSET);
+	return -1;
+}
+
 int
 MP6050::MPU6050ReadAll(){
 	XIic* Iic = I2c_inst.GetXIic();

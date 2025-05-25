@@ -4,12 +4,15 @@
 #include "../platform.h"
 #include "xgpio.h"
 #include "xparameters.h"
-#include "ultrasoneIP.h"
+
 #include "sleep.h"
 #include "xtmrctr.h"
 #include "xinterrupt_wrap.h"
 #include "xscugic.h"
 #include "xiic_i.h"
+
+#include "SpeedSensor_Driver_IP.h"
+#include "ultrasoneIP.h"
 
 #define GPIO_DEVICE_ID      XPAR_GPIO_0_DEVICE_ID
 #define INTC_DEVICE_ID      XPAR_SCUGIC_0_DEVICE_ID
@@ -102,6 +105,31 @@ private:
 
 /***********************************************
  * @author:		Mauro Debruyn
+ * @brief: 		singleton class controlling timer_0
+ *
+ * @details:   	extra info:
+ * 					- Timer for motor pwm
+ * 					- #include "xtmrctr.h"
+ ***********************************************/
+class TIMER_PWM_ {
+public:
+	u8 GetDutyCycle(){return DutyCycle;}
+	int GetStatus(){return Status;}
+	u8 PwmAdjust(u32 period, u32 hightime);
+	static const TIMER_PWM_& instance(){static const TIMER_PWM_ pwm; return pwm;}
+private:
+	TIMER_PWM_();
+
+	XTmrCtr TMRInst;
+	int Status{0};
+	u8  DutyCycle;
+	static constexpr u32 TMR_DEVICE_ID{XPAR_AXI_TIMER_0_DEVICE_ID};
+	static constexpr u32 PERIOD{500000};
+	static constexpr u32 HIGHTIME{PERIOD / 2};
+};
+
+/***********************************************
+ * @author:		Mauro Debruyn
  * @brief: 		singleton ultrasone_0
  *
  * @details:   	extra info:
@@ -121,6 +149,22 @@ public:
 private:
 	ULTRASONE_X(){};
 	uint32_t reg_value_uss0{0}, reg_value_uss1{0};
+};
+
+/***********************************************
+ * @author:		Mauro Debruyn
+ * @brief: 		singleton class controlling timer_0
+ *
+ * @details:   	extra info:
+ * 					- Timer for motor pwm
+ * 					- #include "xtmrctr.h"
+ ***********************************************/
+class SPEEDSENSORS {
+public:
+	s32 GetRawSpeedFromSensor(u8 whichSensor);
+	static const SPEEDSENSORS& instance(){static const SPEEDSENSORS SPS; return SPS;}
+private:
+	SPEEDSENSORS();
 };
 
 /***********************************************
