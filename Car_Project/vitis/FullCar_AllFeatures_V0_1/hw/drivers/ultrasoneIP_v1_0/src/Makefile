@@ -1,3 +1,4 @@
+DRIVER_LIB_VERSION = 1.0
 COMPILER=
 ARCHIVER=
 CP=cp
@@ -5,22 +6,37 @@ COMPILER_FLAGS=
 EXTRA_COMPILER_FLAGS=
 LIB=libxil.a
 
-RELEASEDIR=../../../lib
-INCLUDEDIR=../../../include
-INCLUDES=-I./. -I${INCLUDEDIR}
+CC_FLAGS = $(COMPILER_FLAGS)
+ECC_FLAGS = $(EXTRA_COMPILER_FLAGS)
 
-INCLUDEFILES=*.h
-LIBSOURCES=*.c
-OUTS = *.o
+RELEASEDIR=../../../lib/
+INCLUDEDIR=../../../include/
+INCLUDES=-I./. -I$(INCLUDEDIR)
 
-libs:
-	echo "Compiling ultrasoneIP..."
-	$(COMPILER) $(COMPILER_FLAGS) $(EXTRA_COMPILER_FLAGS) $(INCLUDES) $(LIBSOURCES)
-	$(ARCHIVER) -r ${RELEASEDIR}/${LIB} ${OUTS}
-	make clean
+SRCFILES:=$(wildcard *.c *.cpp)
 
-include:
-	${CP} $(INCLUDEFILES) $(INCLUDEDIR)
+OBJECTS = $(addprefix $(RELEASEDIR), $(addsuffix .o, $(basename $(wildcard *.c))))
+
+libs: $(OBJECTS)
+
+DEPFILES := $(SRCFILES:%.c=$(RELEASEDIR)%.d)
+
+include $(wildcard $(DEPFILES))
+
+include $(wildcard ../../../../dep.mk)
+
+$(RELEASEDIR)%.o: %.c
+	${COMPILER} $(CC_FLAGS) $(ECC_FLAGS) $(INCLUDES) $(DEPENDENCY_FLAGS) -c $< -o $@
+	
+$(RELEASEDIR)%.o: %.cpp
+	${COMPILER} $(CC_FLAGS) $(ECC_FLAGS) $(INCLUDES) $(DEPENDENCY_FLAGS) -c $< -o $@
+
+.PHONY: include
+include: $(addprefix $(INCLUDEDIR),$(wildcard *.h))
+
+$(INCLUDEDIR)%.h: %.h
+	$(CP) $< $@
 
 clean:
-	rm -rf ${OUTS}
+	rm -rf ${OBJECTS}
+	rm -rf $(DEPFILES)

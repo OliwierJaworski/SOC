@@ -5703,3 +5703,1087 @@ con
 23:53:00 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
 23:59:50 INFO  : Projects exported to 'M:\projects\clones\SOC\Car_Project\working_withpickup.zip'
 00:00:51 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:03:16 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:07:30 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:07:49 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:07:54 INFO  : Disconnected from the channel tcfchan#8.
+00:07:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:07:55 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:07:55 INFO  : 'jtag frequency' command is executed.
+00:07:55 INFO  : Context for 'APU' is selected.
+00:07:55 INFO  : System reset is completed.
+00:07:58 INFO  : 'after 3000' command is executed.
+00:07:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:08:00 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:08:00 INFO  : Context for 'APU' is selected.
+00:08:00 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:08:00 INFO  : 'configparams force-mem-access 1' command is executed.
+00:08:00 INFO  : Context for 'APU' is selected.
+00:08:00 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:08:00 INFO  : 'ps7_init' command is executed.
+00:08:00 INFO  : 'ps7_post_config' command is executed.
+00:08:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:08:01 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:08:01 INFO  : 'configparams force-mem-access 0' command is executed.
+00:08:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:08:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:08:01 INFO  : 'con' command is executed.
+00:08:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:08:01 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:21:13 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:21:18 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:21:40 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:22:31 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:22:37 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:22:41 INFO  : Disconnected from the channel tcfchan#9.
+00:22:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:22:43 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:22:43 INFO  : 'jtag frequency' command is executed.
+00:22:43 INFO  : Context for 'APU' is selected.
+00:22:43 INFO  : System reset is completed.
+00:22:46 INFO  : 'after 3000' command is executed.
+00:22:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:22:48 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:22:48 INFO  : Context for 'APU' is selected.
+00:22:48 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:22:48 INFO  : 'configparams force-mem-access 1' command is executed.
+00:22:48 INFO  : Context for 'APU' is selected.
+00:22:48 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:22:48 INFO  : 'ps7_init' command is executed.
+00:22:48 INFO  : 'ps7_post_config' command is executed.
+00:22:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:22:48 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:22:49 INFO  : 'configparams force-mem-access 0' command is executed.
+00:22:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:22:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:22:49 INFO  : 'con' command is executed.
+00:22:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:22:49 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:24:41 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:24:45 INFO  : Disconnected from the channel tcfchan#10.
+00:24:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:24:46 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:24:46 ERROR : port closed
+00:24:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:24:46 ERROR : port closed
+00:24:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:24:49 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:24:49 INFO  : 'jtag frequency' command is executed.
+00:24:49 INFO  : Context for 'APU' is selected.
+00:24:50 INFO  : System reset is completed.
+00:24:53 INFO  : 'after 3000' command is executed.
+00:24:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:24:55 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:24:55 INFO  : Context for 'APU' is selected.
+00:24:55 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:24:55 INFO  : 'configparams force-mem-access 1' command is executed.
+00:24:55 INFO  : Context for 'APU' is selected.
+00:24:55 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:24:55 INFO  : 'ps7_init' command is executed.
+00:24:55 INFO  : 'ps7_post_config' command is executed.
+00:24:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:24:55 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:24:55 INFO  : 'configparams force-mem-access 0' command is executed.
+00:24:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:24:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:24:56 INFO  : 'con' command is executed.
+00:24:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:24:56 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:26:03 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:26:09 INFO  : Disconnected from the channel tcfchan#11.
+00:26:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:26:10 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:26:10 INFO  : 'jtag frequency' command is executed.
+00:26:12 INFO  : Context for 'APU' is selected.
+00:26:12 INFO  : System reset is completed.
+00:26:15 INFO  : 'after 3000' command is executed.
+00:26:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:26:17 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:26:17 INFO  : Context for 'APU' is selected.
+00:26:17 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:26:17 INFO  : 'configparams force-mem-access 1' command is executed.
+00:26:17 INFO  : Context for 'APU' is selected.
+00:26:17 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:26:17 INFO  : 'ps7_init' command is executed.
+00:26:17 INFO  : 'ps7_post_config' command is executed.
+00:26:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:26:18 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:26:18 INFO  : 'configparams force-mem-access 0' command is executed.
+00:26:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:26:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:26:18 INFO  : 'con' command is executed.
+00:26:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:26:18 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:27:19 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:27:23 INFO  : Disconnected from the channel tcfchan#12.
+00:27:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:27:24 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:27:24 ERROR : port closed
+00:27:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:27:24 ERROR : port closed
+00:27:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:27:27 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:27:27 INFO  : 'jtag frequency' command is executed.
+00:27:27 INFO  : Context for 'APU' is selected.
+00:27:27 INFO  : System reset is completed.
+00:27:30 INFO  : 'after 3000' command is executed.
+00:27:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:27:33 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:27:33 INFO  : Context for 'APU' is selected.
+00:27:33 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:27:33 INFO  : 'configparams force-mem-access 1' command is executed.
+00:27:33 INFO  : Context for 'APU' is selected.
+00:27:33 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:27:33 INFO  : 'ps7_init' command is executed.
+00:27:33 INFO  : 'ps7_post_config' command is executed.
+00:27:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:27:33 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:27:33 INFO  : 'configparams force-mem-access 0' command is executed.
+00:27:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:27:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:27:33 INFO  : 'con' command is executed.
+00:27:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:27:33 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:30:14 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:30:31 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:30:37 INFO  : Disconnected from the channel tcfchan#13.
+00:30:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:30:38 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:30:38 ERROR : port closed
+00:30:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:30:38 ERROR : port closed
+00:34:05 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:34:41 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:34:49 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:34:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:34:53 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:34:53 INFO  : 'jtag frequency' command is executed.
+00:34:53 INFO  : Context for 'APU' is selected.
+00:34:53 INFO  : System reset is completed.
+00:34:56 INFO  : 'after 3000' command is executed.
+00:34:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:34:58 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:34:58 INFO  : Context for 'APU' is selected.
+00:34:58 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:34:58 INFO  : 'configparams force-mem-access 1' command is executed.
+00:34:58 INFO  : Context for 'APU' is selected.
+00:34:58 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:34:59 INFO  : 'ps7_init' command is executed.
+00:34:59 INFO  : 'ps7_post_config' command is executed.
+00:34:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:34:59 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:34:59 INFO  : 'configparams force-mem-access 0' command is executed.
+00:34:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:34:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:34:59 INFO  : 'con' command is executed.
+00:34:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:34:59 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:44:21 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:44:40 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:44:44 INFO  : Disconnected from the channel tcfchan#14.
+00:44:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:44:45 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:44:45 INFO  : 'jtag frequency' command is executed.
+00:44:45 INFO  : Context for 'APU' is selected.
+00:44:45 INFO  : System reset is completed.
+00:44:48 INFO  : 'after 3000' command is executed.
+00:44:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:44:51 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:44:51 INFO  : Context for 'APU' is selected.
+00:44:51 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:44:51 INFO  : 'configparams force-mem-access 1' command is executed.
+00:44:51 INFO  : Context for 'APU' is selected.
+00:44:51 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:44:51 INFO  : 'ps7_init' command is executed.
+00:44:51 INFO  : 'ps7_post_config' command is executed.
+00:44:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:44:51 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:44:51 INFO  : 'configparams force-mem-access 0' command is executed.
+00:44:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:44:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:44:51 INFO  : 'con' command is executed.
+00:44:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:44:51 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:46:12 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:46:16 INFO  : Disconnected from the channel tcfchan#15.
+00:46:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:18 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:46:18 INFO  : 'jtag frequency' command is executed.
+00:46:18 INFO  : Context for 'APU' is selected.
+00:46:18 INFO  : System reset is completed.
+00:46:21 INFO  : 'after 3000' command is executed.
+00:46:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:46:23 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:46:23 INFO  : Context for 'APU' is selected.
+00:46:23 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:46:23 INFO  : 'configparams force-mem-access 1' command is executed.
+00:46:23 INFO  : Context for 'APU' is selected.
+00:46:23 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:46:23 INFO  : 'ps7_init' command is executed.
+00:46:23 INFO  : 'ps7_post_config' command is executed.
+00:46:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:46:23 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:46:24 INFO  : 'configparams force-mem-access 0' command is executed.
+00:46:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:46:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:46:24 INFO  : 'con' command is executed.
+00:46:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:46:24 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:46:50 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:46:54 INFO  : Disconnected from the channel tcfchan#16.
+00:46:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:46:58 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:46:58 INFO  : 'jtag frequency' command is executed.
+00:46:58 INFO  : Context for 'APU' is selected.
+00:46:58 INFO  : System reset is completed.
+00:47:01 INFO  : 'after 3000' command is executed.
+00:47:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:47:03 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:47:03 INFO  : Context for 'APU' is selected.
+00:47:03 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:47:03 INFO  : 'configparams force-mem-access 1' command is executed.
+00:47:03 INFO  : Context for 'APU' is selected.
+00:47:03 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:47:03 INFO  : 'ps7_init' command is executed.
+00:47:03 INFO  : 'ps7_post_config' command is executed.
+00:47:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:47:04 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:47:04 INFO  : 'configparams force-mem-access 0' command is executed.
+00:47:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:47:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:47:04 INFO  : 'con' command is executed.
+00:47:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:47:04 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:47:48 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:47:52 INFO  : Disconnected from the channel tcfchan#17.
+00:47:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:47:53 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:47:53 ERROR : port closed
+00:47:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:47:53 ERROR : port closed
+00:47:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:47:57 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:47:57 INFO  : 'jtag frequency' command is executed.
+00:47:57 INFO  : Context for 'APU' is selected.
+00:47:57 INFO  : System reset is completed.
+00:48:00 INFO  : 'after 3000' command is executed.
+00:48:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:48:02 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:48:02 INFO  : Context for 'APU' is selected.
+00:48:02 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:48:02 INFO  : 'configparams force-mem-access 1' command is executed.
+00:48:02 INFO  : Context for 'APU' is selected.
+00:48:02 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:48:03 INFO  : 'ps7_init' command is executed.
+00:48:03 INFO  : 'ps7_post_config' command is executed.
+00:48:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:03 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:48:03 INFO  : 'configparams force-mem-access 0' command is executed.
+00:48:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:48:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:48:03 INFO  : 'con' command is executed.
+00:48:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:48:03 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:49:25 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:49:42 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:49:46 INFO  : Disconnected from the channel tcfchan#18.
+00:49:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:49:47 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:49:47 ERROR : port closed
+00:49:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:49:47 ERROR : port closed
+00:49:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:49:50 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:49:50 INFO  : 'jtag frequency' command is executed.
+00:49:50 INFO  : Context for 'APU' is selected.
+00:49:50 INFO  : System reset is completed.
+00:49:53 INFO  : 'after 3000' command is executed.
+00:49:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:49:55 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:49:55 INFO  : Context for 'APU' is selected.
+00:49:55 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:49:55 INFO  : 'configparams force-mem-access 1' command is executed.
+00:49:55 INFO  : Context for 'APU' is selected.
+00:49:55 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:49:56 INFO  : 'ps7_init' command is executed.
+00:49:56 INFO  : 'ps7_post_config' command is executed.
+00:49:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:49:56 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:49:56 INFO  : 'configparams force-mem-access 0' command is executed.
+00:49:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:49:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:49:56 INFO  : 'con' command is executed.
+00:49:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:49:56 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:51:41 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:51:49 INFO  : Disconnected from the channel tcfchan#19.
+00:51:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:51:50 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:51:50 INFO  : 'jtag frequency' command is executed.
+00:51:50 INFO  : Context for 'APU' is selected.
+00:51:50 INFO  : System reset is completed.
+00:51:53 INFO  : 'after 3000' command is executed.
+00:51:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:51:55 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:51:55 INFO  : Context for 'APU' is selected.
+00:51:55 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:51:55 INFO  : 'configparams force-mem-access 1' command is executed.
+00:51:55 INFO  : Context for 'APU' is selected.
+00:51:55 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:51:55 INFO  : 'ps7_init' command is executed.
+00:51:55 INFO  : 'ps7_post_config' command is executed.
+00:51:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:51:56 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:51:56 INFO  : 'configparams force-mem-access 0' command is executed.
+00:51:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:51:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:51:56 INFO  : 'con' command is executed.
+00:51:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:51:56 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:52:29 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:52:32 INFO  : Disconnected from the channel tcfchan#20.
+00:52:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:52:33 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:52:33 ERROR : port closed
+00:52:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:52:33 ERROR : port closed
+00:52:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:52:37 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:52:37 INFO  : 'jtag frequency' command is executed.
+00:52:37 INFO  : Context for 'APU' is selected.
+00:52:37 INFO  : System reset is completed.
+00:52:40 INFO  : 'after 3000' command is executed.
+00:52:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:52:43 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:52:43 INFO  : Context for 'APU' is selected.
+00:52:43 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:52:43 INFO  : 'configparams force-mem-access 1' command is executed.
+00:52:43 INFO  : Context for 'APU' is selected.
+00:52:43 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:52:43 INFO  : 'ps7_init' command is executed.
+00:52:43 INFO  : 'ps7_post_config' command is executed.
+00:52:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:52:43 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:52:43 INFO  : 'configparams force-mem-access 0' command is executed.
+00:52:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:52:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:52:43 INFO  : 'con' command is executed.
+00:52:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:52:43 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:54:56 INFO  : Disconnected from the channel tcfchan#21.
+00:54:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:54:57 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:54:57 ERROR : port closed
+00:54:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:54:57 ERROR : port closed
+00:55:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:55:01 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:55:01 INFO  : 'jtag frequency' command is executed.
+00:55:01 INFO  : Context for 'APU' is selected.
+00:55:01 INFO  : System reset is completed.
+00:55:04 INFO  : 'after 3000' command is executed.
+00:55:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:55:06 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:55:06 INFO  : Context for 'APU' is selected.
+00:55:06 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:55:06 INFO  : 'configparams force-mem-access 1' command is executed.
+00:55:06 INFO  : Context for 'APU' is selected.
+00:55:06 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:55:07 INFO  : 'ps7_init' command is executed.
+00:55:07 INFO  : 'ps7_post_config' command is executed.
+00:55:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:55:07 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:55:07 INFO  : 'configparams force-mem-access 0' command is executed.
+00:55:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:55:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:55:07 INFO  : 'con' command is executed.
+00:55:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:55:07 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:57:16 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:57:20 INFO  : Disconnected from the channel tcfchan#22.
+00:57:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:57:21 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:57:21 ERROR : port closed
+00:57:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:57:21 ERROR : port closed
+00:57:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:57:29 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+00:57:29 INFO  : 'jtag frequency' command is executed.
+00:57:29 INFO  : Context for 'APU' is selected.
+00:57:29 INFO  : System reset is completed.
+00:57:32 INFO  : 'after 3000' command is executed.
+00:57:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+00:57:34 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+00:57:34 INFO  : Context for 'APU' is selected.
+00:57:34 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+00:57:34 INFO  : 'configparams force-mem-access 1' command is executed.
+00:57:34 INFO  : Context for 'APU' is selected.
+00:57:34 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+00:57:34 INFO  : 'ps7_init' command is executed.
+00:57:34 INFO  : 'ps7_post_config' command is executed.
+00:57:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:57:34 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+00:57:35 INFO  : 'configparams force-mem-access 0' command is executed.
+00:57:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+00:57:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+00:57:35 INFO  : 'con' command is executed.
+00:57:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+00:57:35 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+00:58:32 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+00:59:31 INFO  : Disconnected from the channel tcfchan#23.
+01:00:13 DEBUG : Logs will be stored at 'M:/projects/clones/SOC/Car_Project/vitis/IDE.log'.
+01:00:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive M:\projects\clones\SOC\Car_Project\vitis\temp_xsdb_launch_script.tcl
+01:00:13 ERROR : (XSDB Server)'\gnu\microblaze\lin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+01:00:13 ERROR : (XSDB Server)'\gnu\microblaze\nt\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+01:00:13 ERROR : (XSDB Server)'\gnuwin\bin\' is not recognized as an internal or external command,
+operable program or batch file.
+
+01:00:17 INFO  : Platform repository initialization has completed.
+01:00:17 INFO  : Registering command handlers for Vitis TCF services
+01:00:17 INFO  : XSCT server has started successfully.
+01:00:21 INFO  : plnx-install-location is set to ''
+01:00:21 INFO  : Successfully done setting XSCT server connection channel  
+01:00:21 INFO  : Successfully done query RDI_DATADIR 
+01:00:21 INFO  : Successfully done setting workspace for the tool. 
+01:01:09 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+01:01:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:01:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:01:36 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+01:01:44 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+01:01:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:01:47 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+01:01:47 INFO  : 'jtag frequency' command is executed.
+01:01:47 INFO  : Context for 'APU' is selected.
+01:01:47 INFO  : System reset is completed.
+01:01:50 INFO  : 'after 3000' command is executed.
+01:01:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+01:01:54 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+01:01:54 INFO  : Context for 'APU' is selected.
+01:01:54 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+01:01:54 INFO  : 'configparams force-mem-access 1' command is executed.
+01:01:54 INFO  : Context for 'APU' is selected.
+01:01:54 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+01:01:54 INFO  : 'ps7_init' command is executed.
+01:01:54 INFO  : 'ps7_post_config' command is executed.
+01:01:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:01:54 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:01:54 INFO  : 'configparams force-mem-access 0' command is executed.
+01:01:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:01:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:01:55 INFO  : 'con' command is executed.
+01:01:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:01:55 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+01:02:35 INFO  : Disconnected from the channel tcfchan#1.
+01:02:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:02:36 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+01:02:36 INFO  : 'jtag frequency' command is executed.
+01:02:36 INFO  : Context for 'APU' is selected.
+01:02:36 INFO  : System reset is completed.
+01:02:39 INFO  : 'after 3000' command is executed.
+01:02:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+01:02:41 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+01:02:41 INFO  : Context for 'APU' is selected.
+01:02:43 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+01:02:43 INFO  : 'configparams force-mem-access 1' command is executed.
+01:02:43 INFO  : Context for 'APU' is selected.
+01:02:43 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+01:02:43 INFO  : 'ps7_init' command is executed.
+01:02:43 INFO  : 'ps7_post_config' command is executed.
+01:02:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:02:44 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:02:44 INFO  : 'configparams force-mem-access 0' command is executed.
+01:02:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:02:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:02:44 INFO  : 'con' command is executed.
+01:02:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:02:44 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+01:05:10 INFO  : Disconnected from the channel tcfchan#2.
+01:05:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:05:11 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+01:05:11 ERROR : port closed
+01:05:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:05:11 ERROR : port closed
+01:05:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:05:18 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+01:05:18 INFO  : 'jtag frequency' command is executed.
+01:05:18 INFO  : Context for 'APU' is selected.
+01:05:18 INFO  : System reset is completed.
+01:05:21 INFO  : 'after 3000' command is executed.
+01:05:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+01:05:24 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+01:05:24 INFO  : Context for 'APU' is selected.
+01:05:26 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+01:05:26 INFO  : 'configparams force-mem-access 1' command is executed.
+01:05:26 INFO  : Context for 'APU' is selected.
+01:05:26 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+01:05:26 INFO  : 'ps7_init' command is executed.
+01:05:26 INFO  : 'ps7_post_config' command is executed.
+01:05:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:05:26 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:05:26 INFO  : 'configparams force-mem-access 0' command is executed.
+01:05:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:05:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:05:26 INFO  : 'con' command is executed.
+01:05:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:05:26 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+01:06:59 INFO  : Disconnected from the channel tcfchan#3.
+01:07:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:07:00 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+01:07:00 ERROR : port closed
+01:07:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:07:00 ERROR : port closed
+01:07:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:07:03 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+01:07:03 INFO  : 'jtag frequency' command is executed.
+01:07:03 INFO  : Context for 'APU' is selected.
+01:07:03 INFO  : System reset is completed.
+01:07:06 INFO  : 'after 3000' command is executed.
+01:07:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+01:07:09 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+01:07:09 INFO  : Context for 'APU' is selected.
+01:07:10 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+01:07:10 INFO  : 'configparams force-mem-access 1' command is executed.
+01:07:10 INFO  : Context for 'APU' is selected.
+01:07:10 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+01:07:11 INFO  : 'ps7_init' command is executed.
+01:07:11 INFO  : 'ps7_post_config' command is executed.
+01:07:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:07:11 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:07:11 INFO  : 'configparams force-mem-access 0' command is executed.
+01:07:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:07:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:07:11 INFO  : 'con' command is executed.
+01:07:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:07:11 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+01:09:57 INFO  : Disconnected from the channel tcfchan#4.
+01:09:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:09:58 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+01:09:58 ERROR : port closed
+01:09:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:09:58 ERROR : port closed
+01:10:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:10:02 INFO  : Jtag cable 'Xilinx HW-FTDI-TEST FT2232H 1234-tulA' is selected.
+01:10:02 INFO  : 'jtag frequency' command is executed.
+01:10:02 INFO  : Context for 'APU' is selected.
+01:10:02 INFO  : System reset is completed.
+01:10:05 INFO  : 'after 3000' command is executed.
+01:10:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}' command is executed.
+01:10:08 INFO  : Device configured successfully with "M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit"
+01:10:08 INFO  : Context for 'APU' is selected.
+01:10:09 INFO  : Hardware design and registers information is loaded from 'M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa'.
+01:10:09 INFO  : 'configparams force-mem-access 1' command is executed.
+01:10:09 INFO  : Context for 'APU' is selected.
+01:10:09 INFO  : Sourcing of 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl' is done.
+01:10:10 INFO  : 'ps7_init' command is executed.
+01:10:10 INFO  : 'ps7_post_config' command is executed.
+01:10:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:10:10 INFO  : The application 'M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:10:10 INFO  : 'configparams force-mem-access 0' command is executed.
+01:10:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx HW-FTDI-TEST FT2232H 1234-tulA" && level==0 && jtag_device_ctx=="jsn-HW-FTDI-TEST FT2232H-1234-tulA-23727093-0"}
+fpga -file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/hw/FullCar_AllFeatures_V0_1.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:10:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:10:10 INFO  : 'con' command is executed.
+01:10:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+01:10:10 INFO  : Launch script is exported to file 'M:\projects\clones\SOC\Car_Project\vitis\SOC_CAR_app_system\_ide\scripts\debugger_soc_car_app-default.tcl'
+01:25:49 INFO  : No changes in MSS file content so sources will not be generated.
+01:25:57 INFO  : Result from executing command 'getProjects': FullCar_AllFeatures_V0_1
+01:25:57 INFO  : Result from executing command 'getPlatforms': FullCar_AllFeatures_V0_1|M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/FullCar_AllFeatures_V0_1.xpfm
+01:26:01 INFO  : Checking for BSP changes to sync application flags for project 'SOC_CAR_app'...
+01:33:36 INFO  : No changes in MSS file content so sources will not be generated.
+01:40:32 INFO  : Result from executing command 'getProjects': FullCar_AllFeatures_V0_1
+01:40:32 INFO  : Result from executing command 'getPlatforms': FullCar_AllFeatures_V0_1|M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/FullCar_AllFeatures_V0_1.xpfm
+01:41:21 INFO  : Checking for BSP changes to sync application flags for project 'fsbl'...
+01:43:55 INFO  : Generated template bif file for SOC_CAR_app_system
+01:44:27 INFO  : Invoking Bootgen: bootgen -image SOC_CAR_app_system.bif -arch zynq -o M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app_system/_ide/bootimage/BOOT.bin
+01:44:27 INFO  : Creating new bif file M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app_system/_ide/bootimage/SOC_CAR_app_system.bif
+01:44:29 INFO  : Bootgen command execution is done.
+01:50:45 INFO  : Disconnected from the channel tcfchan#5.

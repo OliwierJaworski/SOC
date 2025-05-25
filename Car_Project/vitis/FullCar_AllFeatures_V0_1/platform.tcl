@@ -40,3 +40,17 @@ platform generate
 platform clean
 platform generate
 platform generate -domains standalone_ps7_cortexa9_0,zynq_fsbl 
+platform active {FullCar_AllFeatures_V0_1}
+bsp reload
+bsp config xil_interrupt "false"
+bsp write
+platform generate -domains 
+bsp reload
+domain active {standalone_ps7_cortexa9_0}
+bsp reload
+bsp setlib -name xilffs -ver 5.2
+bsp setlib -name xilrsa -ver 1.8
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate

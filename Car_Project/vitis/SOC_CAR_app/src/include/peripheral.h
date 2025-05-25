@@ -16,6 +16,7 @@
 #include "Motor_DriverIP.h"
 
 #define __CLEAR_SCREEN__ xil_printf("\x1B[2J\x1B[H\n");
+#define __DEBOUNCE__ usleep(500000);
 
 #define GPIO_DEVICE_ID      XPAR_GPIO_0_DEVICE_ID
 #define INTC_DEVICE_ID      XPAR_SCUGIC_0_DEVICE_ID
@@ -206,7 +207,7 @@ public:
 	s32 GetRpm(u8 deviceSelect);
 	static SPEEDSENSORS& instance(){static SPEEDSENSORS SPS; return SPS;}
 private:
-	SPEEDSENSORS();
+	SPEEDSENSORS(){};
 };
 
 /***********************************************

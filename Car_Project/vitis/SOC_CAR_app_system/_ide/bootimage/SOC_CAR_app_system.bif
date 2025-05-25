@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]M:/projects/clones/SOC/Car_Project/vitis/FullCar_AllFeatures_V0_1/export/FullCar_AllFeatures_V0_1/sw/FullCar_AllFeatures_V0_1/boot/fsbl.elf
+	M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/_ide/bitstream/FullCar_AllFeatures_V0_1.bit
+	M:/projects/clones/SOC/Car_Project/vitis/SOC_CAR_app/Debug/SOC_CAR_app.elf
+}

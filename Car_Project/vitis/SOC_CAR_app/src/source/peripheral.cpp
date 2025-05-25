@@ -128,8 +128,12 @@ TIMER_1_::Timer_1_Isr(void *CallBackRef, u8 TmrCtrNumber){
 		 * of the timer counter that expired, increment a shared variable so
 		 * the main thread of execution can see the timer expired
 		 */
+
 	if (XTmrCtr_IsExpired(InstancePtr, TmrCtrNumber)) {
-		xil_printf("timer expired cb launched\r\n");
+		SPEEDSENSORS& md{SPEEDSENSORS::instance()};
+		s32 speedvalue0 = md.GetRawSpeedFromSensor(0);
+		s32 speedvalue1 = md.GetRawSpeedFromSensor(1);
+		xil_printf("speed values RPM:% speedsensor0: %d, speedsensor1: %d\r\n",speedvalue0, speedvalue1);
 	}
 }
 

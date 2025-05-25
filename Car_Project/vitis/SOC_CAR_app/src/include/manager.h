@@ -18,6 +18,7 @@ private:
 	SWITCHES& sws{SWITCHES::instance()};
 	ULTRASONE_X& uss{ULTRASONE_X::instance()};
 	MP6050& mp{MP6050::instance()};
+	SPEEDSENSORS& sps{SPEEDSENSORS::instance()};
 };
 
 #endif
