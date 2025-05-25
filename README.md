@@ -47,7 +47,7 @@ This subfolder contains resources related to the **IMU**, including project file
 This subfolder contains resources related to the **full car project**, which combines all components above into a complete embedded system. Includes project files for **Vivado** and **Vitis**, a block design PDF, and a demonstration video.
 
 ### Contents  
-- 📄 [PDF Block Design](./Car_Project/motor_speed.pdf)  
+- 📄 [PDF Block Design]([./Car_Project/motor_speed.pdf](https://github.com/OliwierJaworski/SOC/blob/main/Car_Project/blokdesign_car.pdf))  
 - 💻 [Vitis Classic Project](./Car_Project/vitis/)  
 - 🛠️ [Vivado Project](./Car_Project/vivado/)  
 - ▶️ [YouTube Demo](https://youtu.be/AtfHGin1JEI?si=Db_pDSz_8XypDvtc)  
