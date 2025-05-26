@@ -50,6 +50,6 @@ This subfolder contains resources related to the **full car project**, which com
 - 📄 [PDF Block Design](https://github.com/OliwierJaworski/SOC/blob/main/Car_Project/blokdesign_car.pdf)  
 - 💻 [Vitis Classic Project](./Car_Project/vitis/)  
 - 🛠️ [Vivado Project](./Car_Project/vivado/)  
-- ▶️ [YouTube Demo](https://youtu.be/AtfHGin1JEI?si=Db_pDSz_8XypDvtc)  
+- ▶️ [YouTube Demo](https://youtu.be/08mkWSlicag?si=iKRgNa2x3h1jvaUB)  
 
 📘 More information about the full car system can be found in the [README file](./Car_Project/README.md).
