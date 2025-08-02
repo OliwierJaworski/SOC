@@ -100,6 +100,8 @@ Once this is done, you should be able to run Vivado by typing:
 ```bash
 vivado
 ```
+## how to fix problem with vitis on newer distros 
+- [threat explaining the fix](https://adaptivesupport.amd.com/s/question/0D54U000091FX0XSAW/vitis-no-longer-opening-ubuntu-2a404-vitis-20242?language=en_US)
 
 ## resources
 - [Install - What Ubuntu files are required for Vivado to run successfully](https://adaptivesupport.amd.com/s/article/63794?language=en_US)<br>
